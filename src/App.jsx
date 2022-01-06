@@ -7,10 +7,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        /* Voir si besoin d'un exact path */
         <Route path="/" element={<Home />}/>
         <Route path="/profil/:id" element={<Profile />}/>
-
       </Routes>
     </div>
   );
