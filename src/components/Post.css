@@ -1,0 +1,7 @@
+.post-card {
+    width: 20vw;
+    height: 50vh;
+    object-fit: cover;
+    color: black;
+    background-color: aqua;
+}
