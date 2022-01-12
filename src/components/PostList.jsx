@@ -1,14 +1,17 @@
-import React from 'react'
-import Post from './Post'
+import React, {useState} from 'react';
+import Post from './Post';
+import posts from "../assets/posts.js";
 import './PostList.css'
-import posts from '../assets/posts.js'
 
-const PostList = () => { 
+const PostList = () => {
     return (
         <div className='post-list'>
-            {posts && posts
+            { posts && posts
+            .sort(function(a, b) {
+                return b.date.localeCompare(a.date);
+            })
             .map((post) => (
-            <div key={post.userid} className='cards-post'>
+            <div key={post.userid}>
                 <Post post={post}/>
             </div>
             ))}
