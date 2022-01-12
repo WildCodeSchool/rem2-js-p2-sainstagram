@@ -3,11 +3,7 @@ import Post from './Post'
 import './PostList.css'
 import posts from '../assets/posts.js'
 
-
-
-
 const PostList = () => { 
-
     return (
         <div className='post-list'>
             {posts && posts
