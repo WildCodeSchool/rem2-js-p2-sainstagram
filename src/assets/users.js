@@ -114,7 +114,7 @@ const users = [ {
     "birthday": '1er Septembre',
     "birthplace": 'Sanctuaire, Grèce',
     "bloodtype": 'A',
-    "category": 'Déeese',
+    "category": 'Déesse',
     "constellation": null,
     "trainingplace": null,
     "profilepic":
@@ -673,4 +673,4 @@ const users = [ {
     ],
   },
 ]
-export default users;
+export default users
