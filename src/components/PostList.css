@@ -1,0 +1,10 @@
+.Post-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.Postlist-post {
+    justify-content: center;
+    background-color: white;
+    padding: 5px 0px;;
+}

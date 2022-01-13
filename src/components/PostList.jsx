@@ -5,13 +5,13 @@ import './PostList.css'
 
 const PostList = () => {
     return (
-        <div className='post-list'>
+        <div className='Post-list'>
             { posts && posts
             .sort(function(a, b) {
                 return b.date.localeCompare(a.date);
             })
             .map((post) => (
-            <div key={post.userid}>
+            <div className='Postlist-post' key={post.userid}>
                 <Post post={post}/>
             </div>
             ))}

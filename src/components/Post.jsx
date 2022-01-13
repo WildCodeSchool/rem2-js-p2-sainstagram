@@ -6,10 +6,10 @@ import './Post.css'
 const Post = ({post}) => {
     return (
         <div className='post-card'>
-            <Link to={`/profil/${post.userid}`}><h3>{post.name}</h3></Link>
+            <Link to={`/profil/${post.userid}`}><h3 className='Post-postname'>{post.name}</h3></Link>
             <img className="post-img" src={post.picture} alt={post.name} />
-            <p>{" "}{post.caption}</p>
-            <p>Publié le{" "}{post.date}</p>
+            <p className='post-caption'>{" "}"{post.caption}"</p>
+            <p className='post-date'>Publié le{" "}{post.date}</p>
         </div>
     )
 }

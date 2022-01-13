@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 :root {
     --main-color: #c0c0c0;
     --second-color: #dac3d6;
     --third-color: #ffc2d1;
-    --dark-main-color: #FFC6B1;
+    --dark-main-color: #ffc6b1;
     --dark-second-color: #ffd988;
     --dark-third-color: #f9f871;
 }

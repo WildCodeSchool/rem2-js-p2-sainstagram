@@ -4,9 +4,11 @@ import "./Header.css"
 
 const Header = () => {
     return (
+        
         <div className="header" >
-            <img src={logo} alt="logo" />
+            <img className='Header-logo' src={logo} alt="logo" />
         </div>
+         
     )
 }
 
