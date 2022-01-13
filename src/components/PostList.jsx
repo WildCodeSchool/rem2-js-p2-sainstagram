@@ -10,8 +10,8 @@ const PostList = () => {
             .sort(function(a, b) {
                 return b.date.localeCompare(a.date);
             })
-            .map((post) => (
-            <div key={post.userid}>
+            .map((post,index) => (
+            <div key={index}>
                 <Post post={post}/>
             </div>
             ))}

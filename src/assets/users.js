@@ -1,4 +1,4 @@
-[ {
+const users = [ {
   "id": 1,
   "name": 'Seiya',
   "age": '13ans',
@@ -114,7 +114,7 @@
     "birthday": '1er Septembre',
     "birthplace": 'Sanctuaire, Grèce',
     "bloodtype": 'A',
-    "category": 'Déeese',
+    "category": 'Déesse',
     "constellation": null,
     "trainingplace": null,
     "profilepic":
@@ -673,3 +673,5 @@
     ],
   },
 ]
+
+export default users
