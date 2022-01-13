@@ -442,7 +442,7 @@ const users = [ {
     ],
   },
 
-  {
+  { 
     name: 'Mü',
     age: '20ans',
     height: '182cm',
