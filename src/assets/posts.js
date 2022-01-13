@@ -32,7 +32,7 @@ const posts = [
   },
   {
     "userid": 6,
-    "date": '202120210128',
+    "date": '20210128',
     "name": 'Saori Kido',
     "picture":
       'https://images.uncyclomedia.co/inciclopedia/es/thumb/6/63/SaoriAbuelo.jpg/300px-SaoriAbuelo.jpg',

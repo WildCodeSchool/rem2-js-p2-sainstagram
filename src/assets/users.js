@@ -102,7 +102,7 @@ const users = [ {
     "profilepic":
       'https://www.nautiljon.com/images/perso/00/08/mini/ikki_phoenix_no_saint_1880.jpg?11626195969',
     "description":
-      'je n’ai d’ordres à recevoir de personne, pas même d’une déesse !',
+      "Je n'ai d'ordres à recevoir de personne, pas même d'une déesse !",
     "abilities": ["l'Illusion du Phénix", 'les Ailes du Phénix'],
   },
   {
@@ -114,7 +114,7 @@ const users = [ {
     "birthday": '1er Septembre',
     "birthplace": 'Sanctuaire, Grèce',
     "bloodtype": 'A',
-    "category": 'Déeese',
+    "category": 'Déesse',
     "constellation": null,
     "trainingplace": null,
     "profilepic":
@@ -443,8 +443,8 @@ const users = [ {
   },
 
   {
-    name: 'Mü',
-    age: '20ans',
+    "name": 'Mü',
+    "age": '20ans',
     height: '182cm',
     weight: '75kg',
     birthday: '27 mars',
