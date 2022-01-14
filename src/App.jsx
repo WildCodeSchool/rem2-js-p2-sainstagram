@@ -8,10 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="header-sticky">
-        <Header/>
-        <NavProfile/>
-      </div>
+        <Header />    
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/profil/:id" element={<Profile />}/>

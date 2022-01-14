@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'PT Sans Narrow', sans-serif;
+    text-decoration: none;
 }
 
 :root {
@@ -11,11 +12,4 @@
     --dark-main-color: #ffc6b1;
     --dark-second-color: #ffd988;
     --dark-third-color: #f9f871;
-}
-
-.header-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: white;
 }

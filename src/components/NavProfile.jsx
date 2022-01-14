@@ -6,7 +6,7 @@ import './NavProfile.css';
 
 const NavProfile = () => {
     return (
-        <div className='NavProfile'>
+        <div className="NavProfile" >
             {users.map((user, index) => index < 6 ? <Link to={`/Profil/${user.id}`}><User {...user} key={user.id}/></Link> : '')}
         </div>
     )
