@@ -1,7 +1,7 @@
 const users = [ {
   "id": 1,
   "name": 'Seiya',
-  "age": '13ans',
+  "age": '13',
   "height": '165cm',
   "weight": '53kg',
   "birthday": '1er Décembre',
@@ -22,7 +22,7 @@ const users = [ {
   {
     "id": 2,
     "name": 'Shiryu',
-    "age": '14ans',
+    "age": '14',
     "height": '172cm',
     "weight": '53kg',
     "birthday": '4 Octobre',
@@ -33,7 +33,7 @@ const users = [ {
     "trainingplace": 'Lianxi, Chine',
     "profilepic":
       'https://www.nautiljon.com/images/perso/00/77/mini/shiryu_draco_no_saint_1877.jpg?11512125637',
-    "description": 'Je donnerais ma vie vie pour protéger mes amis',
+    "description": 'Je donnerais ma vie pour protéger mes amis',
     "abilities": [
       'la Colère du Dragon',
       "l'Ultime Dragon",
@@ -44,7 +44,7 @@ const users = [ {
   {
     "id": 3,
     "name": 'Hyôga',
-    "age": '14ans',
+    "age": '14',
     "height": '173cm',
     "weight": '60kg',
     "birthday": '23 Janvier',
@@ -66,7 +66,7 @@ const users = [ {
   {
     "id": 4,
     "name": 'Shun',
-    "age": '13ans',
+    "age": '13',
     "height": '165cm',
     "weight": '51kg',
     "birthday": '9 Septembre',
@@ -90,7 +90,7 @@ const users = [ {
   {
     "id": 5,
     "name": 'Ikki',
-    "age": '15ans',
+    "age": '15',
     "height": '175cm',
     "weight": '62kg',
     "birthday": '15 Août',
@@ -108,7 +108,7 @@ const users = [ {
   {
     "id": 6,
     "name": 'Saori Kido',
-    "age": '13ans',
+    "age": '13',
     "height": '155cm',
     "weight": '44kg',
     "birthday": '1er Septembre',
@@ -125,7 +125,7 @@ const users = [ {
   {
     "id": 7,
     "name": 'Jabu',
-    "age": '13ans',
+    "age": '13',
     "height": '165cm',
     "weight": '55kg',
     "birthday": '3 Novembre',
@@ -142,7 +142,7 @@ const users = [ {
   {
     "id": 8,
     "name": 'Geki',
-    "age": '15ans',
+    "age": '15',
     "height": '188cm',
     "weight": '102kg',
     "birthday": '15 Mai',
@@ -159,7 +159,7 @@ const users = [ {
   {
     "id": 9,
     "name": 'Ichi',
-    "age": '14ans',
+    "age": '14',
     "height": '170cm',
     "weight": '56kg',
     "birthday": '10 Février',
@@ -176,7 +176,7 @@ const users = [ {
   {
     "id": 10,
     "name": 'Ban',
-    "age": '15ans',
+    "age": '15',
     "height": '181cm',
     "weight": '83kg',
     "birthday": '30 Décembre',
@@ -193,7 +193,7 @@ const users = [ {
   {
     "id": 11,
     "name": 'Nachi',
-    "age": '14ans',
+    "age": '14',
     "height": '171cm',
     "weight": '57kg',
     "birthday": '20 Juillet',
@@ -210,7 +210,7 @@ const users = [ {
   {
     "id": 12,
     "name": 'June',
-    "age": '14ans',
+    "age": '14',
     "height": '160cm',
     "weight": '45kg',
     "birthday": '17 Avril ',
@@ -227,7 +227,7 @@ const users = [ {
   {
     "id": 13,
     "name": "Marine de l'Aigle",
-    "age": '16ans',
+    "age": '16',
     "height": '167cm',
     "weight": '51kg',
     "birthday": '18 Mars',
@@ -246,7 +246,7 @@ const users = [ {
   {
     "id": 14,
     "name": 'Shina du Serpentaire',
-    "age": '16ans',
+    "age": '16',
     "height": '166cm',
     "weight": '49kg',
     "birthday": '24 mars',
@@ -264,7 +264,7 @@ const users = [ {
   {
     "id": 15,
     "name": 'Misty du Lézard',
-    "age": '16ans',
+    "age": '16',
     "height": '180cm',
     "weight": '68kg',
     "birthday": '11 Octobre',
@@ -282,7 +282,7 @@ const users = [ {
   {
     "id": 16,
     "name": 'Babel du Centaure',
-    "age": '17ans',
+    "age": '17',
     "height": '185cm',
     "weight": '80kg',
     "birthday": '20 février',
@@ -300,7 +300,7 @@ const users = [ {
   {
     "id": 17,
     "name": 'Moses de la Baleine',
-    "age": '17ans',
+    "age": '17',
     "height": '205cm',
     "weight": '130kg',
     "birthday": '2 Août',
@@ -318,7 +318,7 @@ const users = [ {
   {
     "id": 18,
     "name": 'Astérion du Chien',
-    "age": '16ans',
+    "age": '16',
     "height": '183cm',
     "weight": '75kg',
     "birthday": '20 février',
@@ -336,7 +336,7 @@ const users = [ {
   {
     "id": 19,
     "name": 'Jamian du Corbeau',
-    "age": '17ans',
+    "age": '17',
     "height": '166cm',
     "weight": '56kg',
     "birthday": '27 Juillet',
@@ -354,7 +354,7 @@ const users = [ {
   {
     "id": 20,
     "name": 'Dante du Cerbère',
-    "age": '17ans',
+    "age": '17',
     "height": '185cm',
     "weight": '93kg',
     "birthday": '29 Mars',
@@ -372,7 +372,7 @@ const users = [ {
   {
     "id": 21,
     "name": 'Capella du Cocher',
-    "age": '17ans',
+    "age": '17',
     "height": '183cm',
     "weight": '80kg',
     "birthday": '21 Août',
@@ -390,7 +390,7 @@ const users = [ {
   {
     "id": 22,
     "name": 'Algol de Persée',
-    "age": '17ans',
+    "age": '17',
     "height": '188cm',
     "weight": '83kg',
     "birthday": '11 Novembre',
@@ -408,7 +408,7 @@ const users = [ {
   {
     "id": 23,
     "name": 'Sirius du grand Chien',
-    "age": '17ans',
+    "age": '17',
     "height": '185cm',
     "weight": '86kg',
     "birthday": '6 Janvier',
@@ -426,7 +426,7 @@ const users = [ {
   {
     "id": 24,
     "name": "Algethi d'Héraclès",
-    "age": '17ans',
+    "age": '17',
     "height": '240cm',
     "weight": '180kg',
     "birthday": '15 Août',
@@ -444,7 +444,7 @@ const users = [ {
 
   { 
     name: 'Mü',
-    age: '20ans',
+    age: '20',
     height: '182cm',
     weight: '75kg',
     birthday: '27 mars',
@@ -465,7 +465,7 @@ const users = [ {
 
   {
     name: 'Aldébaran',
-    age: '20ans',
+    age: '20',
     height: '210cm',
     weight: '130kg',
     birthday: '4 octobre',
@@ -481,7 +481,7 @@ const users = [ {
 
   {
     name: 'Saga',
-    age: '28ans',
+    age: '28',
     height: '188cm',
     weight: '87kg',
     birthday: '30 mai',
@@ -501,7 +501,7 @@ const users = [ {
 
   {
     name: 'Masque de Mort',
-    age: '23ans',
+    age: '23',
     height: '184cm',
     weight: '82kg',
     birthday: '24 juin',
@@ -520,7 +520,7 @@ const users = [ {
 
   {
     name: 'Aiolia',
-    age: '20ans',
+    age: '20',
     height: '185cm',
     weight: '85kg',
     birthday: '16 Aout',
@@ -540,7 +540,7 @@ const users = [ {
 
   {
     name: 'Shaka',
-    age: '20ans',
+    age: '20',
     height: '182cm',
     weight: '81kg',
     birthday: '19 Septembre',
@@ -563,7 +563,7 @@ const users = [ {
 
   {
     name: 'Dohko',
-    age: '261ans',
+    age: '261',
     height: '140-180cm',
     weight: '??kg',
     birthday: '20 Octobre',
@@ -582,7 +582,7 @@ const users = [ {
 
   {
     name: 'Milo',
-    age: '20ans',
+    age: '20',
     height: '185cm',
     weight: '84kg',
     birthday: '8 Novembre',
@@ -601,7 +601,7 @@ const users = [ {
 
   {
     name: 'Aiolos',
-    age: '28ans',
+    age: '28',
     height: '187cm',
     weight: '85kg',
     birthday: '30 Novembre',
@@ -617,7 +617,7 @@ const users = [ {
 
   {
     name: 'Shura',
-    age: '23ans',
+    age: '23',
     height: '186cm',
     weight: '83kg',
     birthday: '12 Janvier',
@@ -636,7 +636,7 @@ const users = [ {
 
   {
     name: 'Camus',
-    age: '20ans',
+    age: '20',
     height: '184cm',
     weight: '76kg',
     birthday: '7 Février',
@@ -656,7 +656,7 @@ const users = [ {
 
   {
     name: 'Aphrodite',
-    age: '22ans',
+    age: '22',
     height: '183cm',
     weight: '10 mars',
     birthplace: 'Suede',
