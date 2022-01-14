@@ -1,0 +1,12 @@
+.NavProfile {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid var(--dark-main-color);
+    margin-bottom: 30px;
+    position: sticky;
+    top: 10.2vh;
+    z-index: 100;
+    background-color: white;
+
+}
