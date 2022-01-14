@@ -1,5 +1,5 @@
 .NavProfile {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     border-bottom: 2px solid var(--dark-main-color);
