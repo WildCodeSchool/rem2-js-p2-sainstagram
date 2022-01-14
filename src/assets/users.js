@@ -102,7 +102,7 @@ const users = [ {
     "profilepic":
       'https://www.nautiljon.com/images/perso/00/08/mini/ikki_phoenix_no_saint_1880.jpg?11626195969',
     "description":
-      'je n’ai d’ordres à recevoir de personne, pas même d’une déesse !',
+      "Je n'ai d'ordres à recevoir de personne, pas même d'une déesse !",
     "abilities": ["l'Illusion du Phénix", 'les Ailes du Phénix'],
   },
   {
@@ -673,4 +673,4 @@ const users = [ {
     ],
   },
 ]
-export default users
+export default users;

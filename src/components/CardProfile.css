@@ -1,0 +1,45 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+    background-color: white;
+    border-bottom: 2px solid var(--dark-main-color);
+}
+
+.Cardprofile-profile-picture {
+    border-radius: 50%;
+    width: 40%;
+    height: 50%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border:2px solid var(--main-color);
+}
+
+.Cardprofile-profile-name {
+    padding-bottom: 5px;
+}
+
+.Cardprofile-profile-constellation {
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.Cardprofile-profile-full-description {
+    align-self: left;
+    padding: 15px;
+}
+
+.Cardprofile-profile-training {
+    padding-bottom: 5px;
+}
+
+.Cardprofile-profile-birth {
+    padding-bottom: 5px;
+}
+
+.Cardprofile-profile-description {
+    padding-bottom: 10px;
+}
