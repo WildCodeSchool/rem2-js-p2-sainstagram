@@ -5,8 +5,8 @@ import './User.css';
 function User(props) {
     return (
         <div className='User'>
-            <img className='' src={props.profilepic} alt={props.name} />
-            <h3>{props.name}</h3>
+            <img className='User-profile-pic' src={props.profilepic} alt={props.name} />
+            <h3 className='User-profile-name'>{props.name}</h3>
         </div>
     )
 }

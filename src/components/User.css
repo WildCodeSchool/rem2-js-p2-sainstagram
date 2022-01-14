@@ -1,6 +1,24 @@
-.User img{
-    width:200px;
-    height: 200px;
+.User-profile-pic {
+    width:12vw;
+    height: 60%;
     border-radius: 50%;
+    border:2px solid var(--dark-main-color);
+    padding: 2px;
+}
+
+.User-profile-name {
+    font-size: 9px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px; 
+}
+
+.User {
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
