@@ -1,7 +1,7 @@
 const users = [ {
   "id": 1,
   "name": 'Seiya',
-  "age": '13ans',
+  "age": '13',
   "height": '165cm',
   "weight": '53kg',
   "birthday": '1er Décembre',
