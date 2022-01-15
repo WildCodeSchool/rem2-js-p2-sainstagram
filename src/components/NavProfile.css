@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-evenly;
     border-bottom: 2px solid var(--border-color);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     position: sticky;
     top: 10.2vh;
     z-index: 100;
