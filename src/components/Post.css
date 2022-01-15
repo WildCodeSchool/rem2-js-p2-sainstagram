@@ -1,7 +1,7 @@
 .post-card {
     width: 80%;
     height: 40vh;
-    color: black;
+    color: --text-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
     width: 250px;
     object-fit: contain;
     align-self: center;  
-    background-color: black;
+    background-color: #272727;
 }
 
 .who-posted {
