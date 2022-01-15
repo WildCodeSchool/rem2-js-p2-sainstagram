@@ -11,7 +11,7 @@ const users = [ {
   "constellation": 'Pégase',
   "trainingplace": 'Sanctuaire, Grèce',
   "profilepic":
-    'https://www.nautiljon.com/images/perso/00/67/mini/seiya_pegasus_no_saint_1876.jpg?11525612104',
+    'https://i.ibb.co/LZNkthX/seiya-profilepic.jpg',
   "description": "Pour la gloire d'Athéna!",
   "abilities": [
     'les Météores de Pégase',
@@ -32,7 +32,7 @@ const users = [ {
     "constellation": 'Dragon',
     "trainingplace": 'Lianxi, Chine',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/77/mini/shiryu_draco_no_saint_1877.jpg?11512125637',
+      'https://i.ibb.co/MSyXpJw/shiryu-profilepic.jpg',
     "description": 'Je donnerais ma vie pour protéger mes amis',
     "abilities": [
       'la Colère du Dragon',
@@ -54,7 +54,7 @@ const users = [ {
     "constellation": 'Cygne',
     "trainingplace": 'Sibérie orientale',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/87/mini/hyoga_cygnus_no_saint_1878.jpg?11590095379',
+      'https://i.ibb.co/cvKXYwy/hyoga-profilepic.jpg',
     "description":
       "Penser qu'un rêve est une chose irréalisable, c'est être tel un vieillard qui a renoncé à vivre.",
     "abilities": [
@@ -76,7 +76,7 @@ const users = [ {
     "constellation": 'Andromède',
     "trainingplace": "Ile d'Andromède, Somalie",
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/18/mini/shun_andromeda_no_saint_1881.jpg?11548022743',
+      'https://i.ibb.co/sspBTpf/shun-profilepic.jpg',
     "description":
       "Je n'aime pas me battre mais je ferai tout pour protéger ceux que j'aime",
     "abilities": [
@@ -100,7 +100,7 @@ const users = [ {
     "constellation": 'Phénix',
     "trainingplace": 'Ile de la Reine Morte, Pacifique Sud',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/08/mini/ikki_phoenix_no_saint_1880.jpg?11626195969',
+      'https://i.ibb.co/y5QBGNq/ikki-profilepic.jpg',
     "description":
       "Je n'ai d'ordres à recevoir de personne, pas même d'une déesse !",
     "abilities": ["l'Illusion du Phénix", 'les Ailes du Phénix'],
@@ -118,7 +118,7 @@ const users = [ {
     "constellation": null,
     "trainingplace": null,
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/48/mini/saori_kido_athena_1884.jpg?11573591981',
+      'https://i.ibb.co/5402THJ/saori-profilepic.jpg',
     "description": "Je suis la réincarnation d'Athéna!",
     "abilities": null,
   },
@@ -135,7 +135,7 @@ const users = [ {
     "constellation": 'Licorne',
     "trainingplace": 'Oran, Algérie',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/23/mini/jabu_de_la_licorne_3532.jpg?11523131714',
+      'https://i.ibb.co/YbLDttn/jabu-profilepic.jpg',
     "description": 'Je suis prêt à tous les sacrifice pour Saori',
     "abilities": ['Galop de la Licorne'],
   },
@@ -152,7 +152,7 @@ const users = [ {
     "constellation": 'Grande Ourse',
     "trainingplace": 'Montagnes Rocheuses, Canada',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/17/mini/geki_de_l_ours_4671.jpg?11513558628',
+      'https://i.ibb.co/BzdJCXZ/geki-profilepic.jpg',
     "description": 'Rien ne vaut la force brute',
     "abilities": ["Prise de l'Ours"],
   },
@@ -169,7 +169,7 @@ const users = [ {
     "constellation": 'Hydre',
     "trainingplace": 'Lake Holtz, Finlande',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/25/mini/ichi_de_l_hydre_3652.jpg?11600385233',
+      'https://i.ibb.co/LZ5z989/ichi-profilepic.jpg',
     "description": "Je l'aurai un jour, je l'aurai",
     "abilities": ["Griffes de l'Hydre"],
   },
@@ -186,7 +186,7 @@ const users = [ {
     "constellation": 'Lionet',
     "trainingplace": 'Kilimandjaro, Tanzanie',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/34/mini/ban_du_lionnet_4643.jpg?11547769706',
+      'https://i.ibb.co/2n3dLvw/ban-profilepic.jpg',
     "description": "Je suis là parce que je n'ai pas eu le choix",
     "abilities": ['le Sursaut du Lionnet'],
   },
@@ -203,7 +203,7 @@ const users = [ {
     "constellation": 'Loup',
     "trainingplace": 'Bomihills, Libéria',
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/05/mini/nachi_du_loup_3650.jpg?11522357824',
+      'https://i.ibb.co/mC8Q1r9/nachi-profilepic.jpg',
     "description": 'Je suis sûr que je peux le faire',
     "abilities": ['Hurlement Mortel'],
   },
@@ -220,7 +220,7 @@ const users = [ {
     "constellation": 'Caméléon',
     "trainingplace": "Ile d'Andromède, Somalie",
     "profilepic":
-      'https://www.nautiljon.com/images/perso/00/18/mini/june_du_cameleon_3981.jpg?11548022627',
+      'https://i.ibb.co/K9dx5tH/june-profilepic.jpg',
     "description": "Je suis quelqu'un d'obstiné, sachez-le",
     "abilities": [],
   },
@@ -236,7 +236,7 @@ const users = [ {
     "category": "Chevalier d'Argent",
     "constellation": "l'Aigle",
     "trainingplace": 'Sanctuaire, Grèce',
-    "profilepic": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15HLIMfM_CPbB86MCRrKdlA_wIcD-WhS2hw&usqp=CAU',
+    "profilepic": 'https://i.ibb.co/6gDW8Cv/marin-profilepic.jpg',
     "description": 'Jeune prof japonaise expat en Grèce, toujours là pour toi Seiya!',
     "abilities": [
       "La précipitation aigle",
@@ -255,7 +255,7 @@ const users = [ {
     "category": "Chevalier d'Argent",
     "constellation": 'Serpentaire',
     "trainingplace": 'Sanctuaire, Grèce',
-    "profilepic": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-NJYMWGAIdMK0Wr6p86vM18pVYH9wfq1Cxg&usqp=CAU',
+    "profilepic": 'https://i.ibb.co/256gvbP/shina-profilepic.jpg',
     "description": 'Tempérament de feu :flame',
     "abilities": [
       "Le soleil noir",
@@ -291,7 +291,7 @@ const users = [ {
     "category": "Chevalier d'Argent",
     "constellation": 'le Centaure',
     "trainingplace": 'Ile du Centaure',
-    "profilepic": 'http://www.saintseiyapedia.com/ssp_media/images/a/a7/Babel_face.jpg',
+    "profilepic": 'https://i.ibb.co/HHzkT5L/Babel-profilepic.jpg',
     "description": '',
     "abilities": [
       "Le vortex de flammes",
@@ -345,7 +345,7 @@ const users = [ {
     "category": "Chevalier d'Argent",
     "constellation": 'le Corbeau',
     "trainingplace": 'Angleterre/ Ecosse',
-    "profilepic": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaMIxvHG1LsEGsA0gV00b9r1Aa6XDSzrwTMA&usqp=CAU',
+    "profilepic": 'https://i.ibb.co/H4H7f63/jamian-profilepic.jpg',
     "description": 'Un peu émo, un peu punk',
     "abilities": [
       "L' arbre d'ailes noir'",
