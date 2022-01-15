@@ -1,10 +1,14 @@
 .Post-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .Postlist-post {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: white;
     padding: 5px 0px;;
 }

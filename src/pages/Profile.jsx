@@ -14,7 +14,7 @@ const Profile = () => {
     }, [params.id])
 
     return (
-        <div>       
+        <div className="Profile">       
             <CardProfile infoProfile={infoProfile} />
             <PostList id={parseInt(params.id)}/>
         </div>
