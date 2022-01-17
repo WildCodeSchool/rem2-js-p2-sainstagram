@@ -444,7 +444,7 @@ const users = [ {
   {
     "id": 25,
     "name": 'Mü',
-    "age": '20ans',
+    "age": '20',
     "height": '182cm',
     "weight": '75kg',
     "birthday": '27 mars',
@@ -466,7 +466,7 @@ const users = [ {
   {
     "id": 26,
     "name": 'Aldébaran',
-    "age": '20ans',
+    "age": '20',
     "height": '210cm',
     "weight": '130kg',
     "birthday": '4 octobre',
@@ -483,7 +483,7 @@ const users = [ {
   {
     "id": 27,
     "name": 'Saga',
-    "age": '28ans',
+    "age": '28',
     "height": '188cm',
     "weight": '87kg',
     "birthday": '30 mai',
@@ -504,7 +504,7 @@ const users = [ {
   {
     "id": 28,
     "name": 'Masque de Mort',
-    "age": '23ans',
+    "age": '23',
     "height": '184cm',
     "weight": '82kg',
     "birthday": '24 juin',
@@ -524,7 +524,7 @@ const users = [ {
   {
     "id": 29,
     "name": 'Aiolia',
-    "age": '20ans',
+    "age": '20',
     "height": '185cm',
     "weight": '85kg',
     "birthday": '16 Aout',
@@ -545,7 +545,7 @@ const users = [ {
   {
     "id": 30,
     "name": 'Shaka',
-    "age": '20ans',
+    "age": '20',
     "height": '182cm',
     "weight": '81kg',
     "birthday": '19 Septembre',
@@ -569,7 +569,7 @@ const users = [ {
   {
     "id": 31,
     "name": 'Dohko',
-    "age": '261ans',
+    "age": '261',
     "height": '140-180cm',
     "weight": '??kg',
     "birthday": '20 Octobre',
@@ -589,7 +589,7 @@ const users = [ {
   {
     "id": 32,
     "name": 'Milo',
-    "age": '20ans',
+    "age": '20',
     "height": '185cm',
     "weight": '84kg',
     "birthday": '8 Novembre',
@@ -609,7 +609,7 @@ const users = [ {
   {
     "id": 33,
     "name": 'Aiolos',
-    "age": '28ans',
+    "age": '28',
     "height": '187cm',
     "weight": '85kg',
     "birthday": '30 Novembre',
@@ -626,7 +626,7 @@ const users = [ {
   {
     "id": 34,
     "name": 'Shura',
-    "age": '23ans',
+    "age": '23',
     "height": '186cm',
     "weight": '83kg',
     "birthday": '12 Janvier',
@@ -646,7 +646,7 @@ const users = [ {
   {
     "id": 35,
     "name": 'Camus',
-    "age": '20ans',
+    "age": '20',
     "height": '184cm',
     "weight": '76kg',
     "birthday": '7 Février',
@@ -667,7 +667,7 @@ const users = [ {
   {
     "id": 36,
     "name": 'Aphrodite',
-    "age": '22ans',
+    "age": '22',
     "height": '183cm',
     "weight": '10 mars',
     "birthplace": 'Suede',
