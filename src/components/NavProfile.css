@@ -3,8 +3,8 @@
     height: 10vh;
     display: flex;
     justify-content: space-evenly;
-    border-top: 2px solid var(--dark-gold-color);
-    border-bottom: 2px solid var(--dark-gold-color);
+    border-top: 2px solid var(--gold-color);
+    border-bottom: 2px solid var(--gold-color);
     padding-top: 5px;
     margin-top: 0;
     margin-bottom: 15px;
