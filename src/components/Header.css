@@ -1,10 +1,12 @@
 .header {
+    display: 50%;
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: white;
-    border-bottom: 2px solid var(--dark-main-color);
+    border-bottom: 2px solid var(--border-color);
     height: 10vh;
+    margin-bottom: 10px;
 }
 
 
@@ -13,3 +15,5 @@
     margin-top: 20px;
     padding-left: 10px;
 }
+
+

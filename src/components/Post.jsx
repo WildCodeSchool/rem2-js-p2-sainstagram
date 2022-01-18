@@ -11,18 +11,14 @@ function date2Human (date) {
 
 const Post = ({post}) => {
     return (
-        <article className='post-card'>
-            <div className='post-header'>
-                <Link to={`/profil/${post.userid}`}><h3 className='Post-postname'>{post.name}</h3></Link>
+        <div className='post-card'>
+            <Link to={`/profil/${post.userid}`}><h3 className='Post-postname'>{post.name}</h3></Link>
+            <div className="img-container">
+                <img className="post-img" src={post.picture} alt={post.name} />
             </div>
-            <div>
-                <img  className="post-img" src={post.picture} alt={post.name} />
-            </div>
-            <div className='post-text'>
-                <p className='post-caption'>{" "}"{post.caption}"</p>
-                <p className='post-date'>Publié le{" "}{date2Human(post.date)}</p>
-            </div>
-        </article>
+            <p className='post-caption'><span className="who-posted">{post.name}</span>{" "}"{post.caption}"</p>
+            <p className='post-date'>Publié le{" "}{date2Human(post.date)}</p>
+        </div>
     )
 }
 
