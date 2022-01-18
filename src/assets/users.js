@@ -683,6 +683,5 @@ const users = [ {
       "Starlight exctinction"
     ],
   },
-  
 ]
 export default users;
