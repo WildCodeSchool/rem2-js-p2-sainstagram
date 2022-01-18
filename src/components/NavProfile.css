@@ -3,13 +3,13 @@
     height: 10vh;
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 2px solid white;
+    border-top: 2px solid var(--dark-gold-color);
+    border-bottom: 2px solid var(--dark-gold-color);
+    padding-top: 5px;
     margin-top: 0;
     margin-bottom: 15px;
-    
     position: sticky;
     top: 10.2vh;
     z-index: 100;
     background-color: white;
-
 }
