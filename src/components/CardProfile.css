@@ -49,3 +49,23 @@
 .Cardprofile-profile-description {
     padding-bottom: 10px;
 }
+
+.Bronze {
+    background-image: url(../assets/vertical_backgr_bronze.jpg);
+    background-position: fixed;
+    color: blue;
+}
+
+.Or {
+    background-image: url(../assets/vertical_backgr_gold.jpg);
+    background-position: fixed;
+    color: blue;
+
+}
+
+.Argent {
+    background-image: url(../assets/vertical_backgr_silver.jpg);
+    background-position: fixed;
+    color: blue;
+
+}

@@ -27,8 +27,7 @@ const Profile = () => {
     }, [infoProfile])*/
 
     return (
-        <div className="Profile">  
-            
+        <div className={`Profile ${infoProfile.category}`}>  
             <CardProfile infoProfile={infoProfile} />
             <PostList className="PostList-profile" id={parseInt(params.id)}/>
         </div>
