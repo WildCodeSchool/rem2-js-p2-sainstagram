@@ -1,4 +1,4 @@
 .home {
-    background-image: url(../assets/vertical_backgr_gold.jpg);
+    background-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
     background-attachment: fixed;
 }
