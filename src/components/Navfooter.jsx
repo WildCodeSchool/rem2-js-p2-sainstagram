@@ -30,14 +30,15 @@ const Navfooter = () => {
             <NavLink to="/"  className='navigation-link'>
                 <div><img className='foot-icon' src={send2} alt="send-button" /></div>
             </NavLink>
-            <NavLink to="/"  className='navigation-link'>
-                <div className='favorite-emoji'
-                    onClick={handleClickFavorite}>
-                        {isFavorite ? "❤️" : "🤍"}
-                </div>
-            </NavLink> 
         </div>
     )
 }
 
 export default Navfooter;
+
+            /* <NavLink to="/"  className='navigation-link'>
+                <div className='favorite-emoji'
+                    onClick={handleClickFavorite}>
+                        {isFavorite ? "❤️" : "🤍"}
+                </div>*/
+            // </NavLink>  */}
