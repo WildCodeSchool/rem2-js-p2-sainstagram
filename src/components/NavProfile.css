@@ -3,6 +3,7 @@
     height: 10vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     border-top: 2px solid var(--gold-color);
     border-bottom: 2px solid var(--gold-color);
     padding-top: 5px;
@@ -12,4 +13,9 @@
     top: 10.2vh;
     z-index: 100;
     background-color: white;
+}
+
+.nav-refresh-button {
+    height: 40%;
+
 }

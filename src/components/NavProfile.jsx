@@ -1,29 +1,46 @@
 import React, { useEffect, useState } from 'react';
 import Axios from "axios";
 import { Link } from "react-router-dom";
-/*import users from '../assets/users';*/
 import User from './User';
 import './NavProfile.css';
+import refresh from '../assets/refresh.png';
+
 
 const NavProfile = () => {
-    const [users, setUsers]= useState([]);
-    
+    const [users, setUsers] = useState([]);
+
     useEffect(() => {
         Axios
-        .get("https://a.nacapi.com/sainstgram.users")
-      // Extract the DATA from the received response
-        .then((response) => setUsers(response.data)) 
-      // Use this data to update the state
-        /*.then((data) => {
-        setUsers(data[0]);*/
-     // },
+            .get("https://a.nacapi.com/sainstgram.users")
+            .then((response) => {
+                setUsers(response.data)
+            })
     }, []);
 
+    const randomProfile = [];
+
+    function getRandomUsers() {
+        if (users.length) {
+            for (let i = 0; randomProfile.length < 5; i++) {
+                const j = Math.floor(Math.random() * users.length);
+                if (!randomProfile.includes(users[j]) && users[j].id != 6) {
+                    randomProfile.push(users[j])
+                };
+            }
+        }
+    }
+    getRandomUsers();
+
+    function refreshPage() {
+        window.location.reload(false);
+    }
 
     return (
         <div className="NavProfile" >
-            {users.map((user, index) => index < 6 ? <Link to={`/Profil/${user.id}`}><User {...user} key={user.id}/></Link> : '')}
+            {randomProfile.map((user) => <Link to={`/Profil/${user.id}`}><User {...user} key={user.id} /></Link>)}
+            <img onClick={refreshPage} className='nav-refresh-button' src={refresh} />
         </div>
+        
     )
 }
 
