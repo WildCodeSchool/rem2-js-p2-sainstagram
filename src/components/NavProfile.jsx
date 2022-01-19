@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Axios from "axios";
 import { Link } from "react-router-dom";
-/*import users from '../assets/users';*/
 import User from './User';
 import './NavProfile.css';
 

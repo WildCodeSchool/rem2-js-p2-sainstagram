@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import Axios from "axios";
 import "./Profile.css"
-import users from '../assets/users'
 import CardProfile from '../components/CardProfile'
 import PostList from '../components/PostList'
 import { useEffect, useState } from 'react'
@@ -10,7 +10,10 @@ const Profile = () => {
     const params = useParams();
     const [infoProfile, setInfoProfile] = useState({})
     useEffect(() => {
-        users.map((user) => (parseInt(params.id) === user.id) ? setInfoProfile(user) : null ) 
+        Axios
+        .get(`https://a.nacapi.com/sainstgram.users?id=${params.id}`)
+        .then((response) => {
+            setInfoProfile(response.data[0])});
     }, [params.id])
 
     return (
