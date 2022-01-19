@@ -8,3 +8,18 @@
 .PostList-profile {
     width: 80%;
 }
+
+.Bronze {
+    background-image: url(../assets/vertical_backgr_bronze.jpg);
+    background-position: fixed;
+}
+
+.Or {
+    background-image: url(../assets/vertical_backgr_gold.jpg);
+    background-position: fixed;
+}
+
+.Argent {
+    background-image: url(../assets/vertical_backgr_silver.jpg);
+    background-position: fixed;
+}
