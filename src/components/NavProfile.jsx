@@ -17,12 +17,14 @@ const NavProfile = () => {
     }, []);
 
     const randomProfile = [];
-    
+
     function getRandomUsers() {
         if (users.length) {
-            for (let i = 0; i <= 5; i++) {
-                const j = Math.floor(Math.random() * users.length)
-                randomProfile.push(users[j])
+            for (let i = 0; randomProfile.length < 6; i++) {
+                const j = Math.floor(Math.random() * users.length);
+                if (!randomProfile.includes(users[j])) {
+                    randomProfile.push(users[j])
+                };
             }
         }
     }
