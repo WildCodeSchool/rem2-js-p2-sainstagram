@@ -8,10 +8,25 @@
     top: 0;
     z-index: 101;
     background-color: white;
-    border-bottom: 2px solid var(--border-color);
     color: --text-color;
     font-size: 12px;
 }
+
+.Or {
+    border-bottom: 2px solid var(--gold-color);
+}
+
+.Bronze {
+    border-bottom: 2px solid var(--bronze-color);
+}
+
+.Argent {
+    border-bottom: 2px solid var(--silver-color);
+}
+
+.noBackground {
+    background-color: white;
+} 
 
 .Cardprofile-profile-picture {
     border-radius: 50%;

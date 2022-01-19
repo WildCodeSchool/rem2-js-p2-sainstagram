@@ -4,7 +4,7 @@ import "./CardProfile.css"
 const CardProfile = ({infoProfile}) => {
     return (
         
-        <div className='Cardprofile'>
+        <div className={`Cardprofile noBackground`} >
             <img className='Cardprofile-profile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
             <h3 className='Cardprofile-profile-name'>{infoProfile.name}</h3>
             {infoProfile.constellation !== null ? <p className='Cardprofile-profile-constellation'>{infoProfile.category} de {infoProfile.constellation}</p> : <p>{infoProfile.category}</p>}
@@ -16,5 +16,5 @@ const CardProfile = ({infoProfile}) => {
         </div> 
     )
 }
-
+/*${infoProfile.category} */
 export default CardProfile

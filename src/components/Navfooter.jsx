@@ -1,10 +1,11 @@
-import React from 'react'
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import home from '../assets/home.png'
-import search from '../assets/search.png'
-import send2 from '../assets/send2.png'
-import './Navfooter.css'
+import React from 'react';
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import home from '../assets/home.png';
+import search from '../assets/search.png';
+import video from "../assets/video-icon.png";
+import send2 from '../assets/send2.png';
+import './Navfooter.css';
 
 
 const Navfooter = () => {
@@ -18,13 +19,16 @@ const Navfooter = () => {
     return (
         <div className='navfooter navbar'>
             <NavLink to="/" className='navigation-link'>
-                <div><img className='icon' src={home} alt="name" /></div>
+                <div><img className='foot-icon' src={home} alt="home-button" /></div>
             </NavLink>
             <NavLink to="/"  className='navigation-link'>
-                <div><img className='icon' src={search} alt="name" /></div>
+                <div><img className='foot-icon' src={search} alt="search-button" /></div>
             </NavLink>
             <NavLink to="/"  className='navigation-link'>
-                <div><img className='icon' src={send2} alt="name" /></div>
+                <div><img className='foot-icon-video' src= {video} alt="video-button" /></div>
+            </NavLink>
+            <NavLink to="/"  className='navigation-link'>
+                <div><img className='foot-icon' src={send2} alt="send-button" /></div>
             </NavLink>
             <NavLink to="/"  className='navigation-link'>
                 <div className='favorite-emoji'
@@ -36,4 +40,4 @@ const Navfooter = () => {
     )
 }
 
-export default Navfooter
+export default Navfooter;

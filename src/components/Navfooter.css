@@ -12,7 +12,12 @@
     background-color: white;
 }
 
-.icon {
+.foot-icon {
+    height: 30px;
+    width: auto;
+}
+
+.foot-icon-video {
     height: 30px;
     width: auto;
 }
@@ -38,4 +43,3 @@
     width: auto;
     padding-top: 5px;
 }
-
