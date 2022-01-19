@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react'
 const Profile = () => {
     const params = useParams();
     const [infoProfile, setInfoProfile] = useState({})
-    //const [category, setCategory] = useState("")
 
     useEffect(() => {
         Axios
@@ -17,14 +16,6 @@ const Profile = () => {
         .then((response) => {
             setInfoProfile(response.data[0])});
     }, [params.id])
-
-    /*useEffect(() => {
-        console.log(infoProfile.category)
-        setCategory(infoProfile.category.split("'").pop().split(" ").pop())
-        
-        console.log(category)
-
-    }, [infoProfile])*/
 
     return (
         <div className={`Profile ${infoProfile.category}`}>  
