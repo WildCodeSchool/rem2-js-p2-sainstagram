@@ -6,23 +6,31 @@ import User from './User';
 import './NavProfile.css';
 
 const NavProfile = () => {
-    const [users, setUsers]= useState([]);
-    
+    const [users, setUsers] = useState([]);
+
     useEffect(() => {
-      Axios
-      .get("https://a.nacapi.com/sainstgram.users")
-      // Extract the DATA from the received response
-      .then((response) => setUsers(response.data)) 
-      // Use this data to update the state
-      /*.then((data) => {
-        setUsers(data[0]);*/
-     // },
+        Axios
+            .get("https://a.nacapi.com/sainstgram.users")
+            .then((response) => {
+                setUsers(response.data)
+            })
     }, []);
 
+    const randomProfile = [];
+    
+    function getRandomUsers() {
+        if (users.length) {
+            for (let i = 0; i <= 5; i++) {
+                const j = Math.floor(Math.random() * users.length)
+                randomProfile.push(users[j])
+            }
+        }
+    }
+    getRandomUsers();
 
     return (
         <div className="NavProfile" >
-            {users.map((user, index) => index < 6 ? <Link to={`/Profil/${user.id}`}><User {...user} key={user.id}/></Link> : '')}
+            {randomProfile.map((user) => <Link to={`/Profil/${user.id}`}><User {...user} key={user.id} /></Link>)}
         </div>
     )
 }

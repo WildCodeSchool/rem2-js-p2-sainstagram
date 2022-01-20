@@ -7,9 +7,7 @@ import video from "../assets/video-icon.png";
 import send2 from '../assets/send2.png';
 import './Navfooter.css';
 
-
 const Navfooter = () => {
-
     const [isFavorite, setIsFavorite] = useState(false);
 
     function handleClickFavorite() {
@@ -34,11 +32,10 @@ const Navfooter = () => {
     )
 }
 
-export default Navfooter;
-
             /* <NavLink to="/"  className='navigation-link'>
                 <div className='favorite-emoji'
                     onClick={handleClickFavorite}>
                         {isFavorite ? "❤️" : "🤍"}
                 </div>*/
             // </NavLink>  */}
+export default Navfooter;
