@@ -1,6 +1,6 @@
 .User-profile-pic {
     width:12vw;
-    height: 60%;
+    height: 12vw;
     border-radius: 50%;
     border:2px solid var(--gold-color);
     padding: 2px;
@@ -13,11 +13,10 @@
     font-weight: 500;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 10px; 
+    padding-bottom: 15px;
 }
 
 .User {
-    justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
 }
