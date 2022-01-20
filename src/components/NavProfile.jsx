@@ -3,7 +3,7 @@ import Axios from "axios";
 import { Link } from "react-router-dom";
 import User from './User';
 import './NavProfile.css';
-import refresh from '../assets/refresh.png';
+import refresh2 from '../assets/refresh2.png';
 
 
 const NavProfile = () => {
@@ -38,7 +38,7 @@ const NavProfile = () => {
     return (
         <div className="NavProfile" >
             {randomProfile.map((user) => <Link to={`/Profil/${user.id}`}><User {...user} key={user.id} /></Link>)}
-            <img onClick={refreshPage} className='nav-refresh-button' src={refresh} />
+            <img onClick={refreshPage} className='nav-refresh-button' src={refresh2} />
         </div>
         
     )
