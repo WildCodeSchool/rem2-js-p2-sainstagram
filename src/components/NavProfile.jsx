@@ -34,8 +34,7 @@ const NavProfile = () => {
         <div className="NavProfile" >
             {randomProfile.map((user) => <Link to={`/Profil/${user.id}`}><User {...user} key={user.id} /></Link>)}
             <img onClick={ ()=>{setTrigger({})}} className='nav-refresh-button' src={refresh2} alt="New profiles" />
-        </div>
-        
+        </div> 
     )
 }
 
