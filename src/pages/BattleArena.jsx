@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { useParams } from 'react-router-dom';
 import './BattleArena.css'
-//import Header from '../components/Header'
 import NavProfile from '../components/NavProfile'
 import Player from '../components/Player'
 import data from '../assets/data';
@@ -11,10 +10,8 @@ function rollDice(max=6) {
     return 1 + Math.floor(Math.random()*max)
 }
 function get_data(player1, player2) {
-    console.log('get_data()');
     function get_user_by_id(id){
         let infos = users.filter(item=>item.id===parseInt(id))[0];
-        //console.log(infos);
         return infos;
     }
     let p1 = {}, p2={};
@@ -23,7 +20,6 @@ function get_data(player1, player2) {
         p1 = get_user_by_id(player1);
         p2 = get_user_by_id(player2);
     }else{
-        //console.log(player1, player2);
         p1 =  data[player1];
         p2 = data[player2];
     }
@@ -34,12 +30,16 @@ const BattleArena = () => {
     let players_data = get_data(params.player1, params.player2);
     const [player1, setPlayer1] = React.useState(players_data['p1']);
     const [player2, setPlayer2] = React.useState(players_data['p2']);
+    const [p1ClassName, setP1ClassName] = React.useState("");
+    const [p2ClassName, setP2ClassName] = React.useState("");
     const [turn, setTurn] = useState(0);
     //const [battleState, setBattleState] = React.useState();
     const [log, setLog] = useState('');
     const [looser, setLooser] = useState(null);
 
     function round(player1, player2, turn) {
+        setP1ClassName('');
+        setP2ClassName('');
         let attack, defense, result, message=[];
         if (turn===0) {
             message.push(`${player1.name} attaque !`)
@@ -51,9 +51,11 @@ const BattleArena = () => {
         if (attack>defense){
             result = -20;
             if (turn===0){
+                setP2ClassName('hit');
                 setPlayer2({...player2, health:player2.health+result})
             }else{
                 setPlayer1({...player1, health:player1.health+result})
+                setP1ClassName('hit');
             }
             message.push(`touché !`)
         }else{
@@ -68,12 +70,11 @@ const BattleArena = () => {
     }
     return (
         <div className='BattleArena'>
-            {/*<Header/>*/}
             <NavProfile />
             <div className='Arena'>
-                <Player {...player1} />
+                <Player {...player1} className={p1ClassName} />
                 <div className='log'>{log}</div>
-                <Player {...player2} />
+                <Player {...player2} className={p2ClassName} />
             </div>
             {player1.health && player2.health ? <button onClick={step}>Next turn</button> : ''}
         </div>
