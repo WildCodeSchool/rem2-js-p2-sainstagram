@@ -1,15 +1,13 @@
 import React from 'react'
-import './Home.css'
 import SearchBar from '../components/SearchBar'
-import NavProfile from '../components/NavProfile'
+import './Search.css'
 
-const Home = () => {
+const Search = () => {
     return (
-        <div className='home'>
-            <NavProfile />
-            <SearchBar />
+        <div className='Search'>              
+                <SearchBar />
         </div>
     )
 }
 
-export default Home
+export default Search
