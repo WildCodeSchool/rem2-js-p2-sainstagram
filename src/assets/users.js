@@ -620,9 +620,8 @@ const users = [ {
     "trainingplace": "Grèce",
     "profilepic": "https://fr.web.img6.acsta.net/r_1920_1080/newsv7/18/02/09/14/53/00971880.jpg",
     "description": "",
-    "abilities": ["Atomic Thunder Bolt"],
+    "abilities": ["Atomic Thunder Bolt"]
   },
-
   {
     "id": 34,
     "name": "Shura",
@@ -642,7 +641,6 @@ const users = [ {
       "Jumping Stone"
     ]
   },
-
   {
     "id": 35,
     "name": "Camus",
