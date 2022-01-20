@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 const Profile = () => {
     const params = useParams();
     const [infoProfile, setInfoProfile] = useState({})
+
     useEffect(() => {
         Axios
         .get(`https://a.nacapi.com/sainstgram.users?id=${params.id}`)
@@ -17,7 +18,7 @@ const Profile = () => {
     }, [params.id])
 
     return (
-        <div className="Profile">       
+        <div className={`Profile ${infoProfile.category}`}>  
             <CardProfile infoProfile={infoProfile} />
             <PostList className="PostList-profile" id={parseInt(params.id)}/>
         </div>

@@ -8,3 +8,20 @@
 .PostList-profile {
     width: 80%;
 }
+
+.Bronze {
+    background-color: #f5d3c8;
+    background-image: linear-gradient(to right, #f5d3c8 0%, #c08552 74%);
+    background-position: fixed;
+}
+
+.Or {
+    background-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    background-position: fixed;
+}
+
+.Argent {
+    background-color: #f1f2f6;
+    background-image: linear-gradient(to right, #f1f2f6 0%, #c9c6c6 74%);
+    background-position: fixed;
+}

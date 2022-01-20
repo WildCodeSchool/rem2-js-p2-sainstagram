@@ -8,9 +8,10 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
+    background-color: rgba(255,255,255, 0.7);
+    /*opacity: 0.85;*/
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
-    margin-bottom: 20px;    
 }
 
 .Post-postname {  
@@ -33,6 +34,7 @@
     object-fit: contain;
     align-self: center;  
     background-color: #272727;
+    opacity: 1;
 }
 
 .who-posted {

@@ -9,12 +9,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />    
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/profil/:id" element={<Profile />}/>
-      </Routes>
-      <Navfooter />
+        <Header />    
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/profil/:id" element={<Profile />}/>
+        </Routes>
+        <Navfooter />
     </div>
   );
 }
