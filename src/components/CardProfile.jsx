@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./CardProfile.css"
 
-const CardProfile = ({infoProfile}) => {
+const CardProfile = ({ infoProfile }) => {
     return (
         <div className="Cardprofile">
             <div className="id-card">
+            <Link to={`/battle/${infoProfile.id}/null`}>
               <img className='Cardprofile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
+            </Link>
               <div className="Cardprofile-infos">
               <h3 className='Cardprofile-name'>{infoProfile.name}  {infoProfile.age} ans</h3>
               <p className="Cardprofile-category">{infoProfile.category}</p>
