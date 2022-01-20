@@ -8,6 +8,7 @@ import refresh2 from '../assets/refresh2.png';
 
 const NavProfile = () => {
     const [users, setUsers] = useState([]);
+    const [value, setValue] = useState();
 
     useEffect(() => {
         Axios
@@ -16,6 +17,7 @@ const NavProfile = () => {
                 setUsers(response.data)
             })
     }, []);
+
 
     const randomProfile = [];
 
@@ -31,14 +33,10 @@ const NavProfile = () => {
     }
     getRandomUsers();
 
-    function refreshPage() {
-        window.location.reload(false);
-    }
-
     return (
         <div className="NavProfile" >
             {randomProfile.map((user) => <Link to={`/Profil/${user.id}`}><User {...user} key={user.id} /></Link>)}
-            <img onClick={refreshPage} className='nav-refresh-button' src={refresh2} />
+            <img onClick={ ()=>{setValue({})}} className='nav-refresh-button' src={refresh2} />
         </div>
         
     )
