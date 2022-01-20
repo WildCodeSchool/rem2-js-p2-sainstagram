@@ -22,8 +22,8 @@
 
 .Cardprofile-picture {
     border-radius: 50%;
-    width: 25%;
-    height: 25%;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
     object-position: 60% 50%;
     margin-bottom: 10px;
