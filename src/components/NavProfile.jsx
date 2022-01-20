@@ -5,20 +5,19 @@ import User from './User';
 import './NavProfile.css';
 import refresh2 from '../assets/refresh2.png';
 
-
 const NavProfile = () => {
     const [users, setUsers] = useState([]);
-    const [value, setValue] = useState();
+    const [trigger, setTrigger] = useState();
 
     useEffect(() => {
+        const url = "https://a.nacapi.com/sainstgram.users";
         Axios
-            .get("https://a.nacapi.com/sainstgram.users")
+            .get(url)
             .then((response) => setUsers(response.data))
+            .catch(error => console.log(`API call error: ${error}`))
     }, []);
 
-
     const randomProfile = [];
-
     function getRandomUsers() {
         if (users.length) {
             for (let i = 0; randomProfile.length < 5; i++) {
