@@ -42,11 +42,6 @@ function SearchBar() {
       <input className="input" type="text" 
       onChange = {e => onChangeHandler(e.target.value)}
       value={text}
-      onBlur={ () => {
-       setTimeout(() => {
-        setSuggestions([])
-       }, 100);
-     }}
    />
       {suggestions && suggestions.map((suggestion, i) => 
       <div key={i} className="suggestion" onClick={() => onSuggestionHandler(suggestion.name)}>
