@@ -8,7 +8,6 @@ import send2 from '../assets/send2.png';
 import './Navfooter.css';
 
 const Navfooter = () => {
-    //const [isFavorite, setIsFavorite] = useState(false);
 
     return (
         <div className='navfooter navbar'>
@@ -30,10 +29,4 @@ const Navfooter = () => {
     )
 }
 
-/* <NavLink to="/"  className='navigation-link'>
-    <div className='favorite-emoji'
-        onClick={()=>setIsFavorite(true)}>
-            {isFavorite ? "❤️" : "🤍"}
-    </div>*/
-// </NavLink>  */}
 export default Navfooter;
