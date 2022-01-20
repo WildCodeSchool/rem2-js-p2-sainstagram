@@ -14,7 +14,6 @@
 
 .foot-icon {
     height: 30px;
-    width: auto;
 }
 
 .foot-icon-video {
@@ -27,7 +26,6 @@
     width: auto;
     padding-top: 5px;
     /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg%22"); */
-
 }
 
 .notFavorite {

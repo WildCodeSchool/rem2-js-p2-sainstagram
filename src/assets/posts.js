@@ -612,14 +612,14 @@ const posts = [
     "picture": "https://i.ibb.co/VLsRF78/Marine-de-l-Aigle.png",
     "caption": "Golden hour"
   },
- {
+{
     "userid": 13,
     "date": "20210714",
     "name": "Marine de l'Aigle",
     "picture": "https://i.ibb.co/BZXQs32/A0094.png",
     "caption": "Petite armure pour sortir entre amis. Bal des pompiers, me voilà!"
   },
- {
+{
     "userid": 13,
     "date": "20211005",
     "name": "Marine de l'Aigle",

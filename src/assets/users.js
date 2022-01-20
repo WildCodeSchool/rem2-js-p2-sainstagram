@@ -120,7 +120,7 @@ const users = [ {
     "profilepic":
       "https://i.ibb.co/5402THJ/saori-profilepic.jpg",
     "description": "Je suis la réincarnation d'Athéna!",
-     "abilities": [ ]
+    "abilities": [ ]
   },
   {
     "id": 7,

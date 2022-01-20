@@ -15,5 +15,5 @@ const CardProfile = ({infoProfile}) => {
         </div> 
     )
 }
-/*${infoProfile.category} */
+
 export default CardProfile
