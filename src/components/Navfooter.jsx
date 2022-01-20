@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import SearchBar from './SearchBar';
 import home from '../assets/home.png';
 import search from '../assets/search.png';
 import video from "../assets/video-icon.png";
@@ -19,8 +20,9 @@ const Navfooter = () => {
             <NavLink to="/" className='navigation-link'>
                 <div><img className='foot-icon' src={home} alt="home-button" /></div>
             </NavLink>
-            <NavLink to="/"  className='navigation-link'>
-                <div><img className='foot-icon' src={search} alt="search-button" /></div>
+            <NavLink to="/search"  className='navigation-link'>
+                <div>
+                <img className='foot-icon' src={search} alt="search-button" /></div>
             </NavLink>
             <NavLink to="/"  className='navigation-link'>
                 <div><img className='foot-icon-video' src= {video} alt="video-button" /></div>
