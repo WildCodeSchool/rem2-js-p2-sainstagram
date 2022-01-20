@@ -1,0 +1,20 @@
+.BattleArena {
+    background-color: var(--dark-main-color);
+}
+.BattleArena button {
+    height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+.Arena {
+    display: flex;
+    justify-content: space-around;
+    background-color: burlywood;
+}
+div.log {
+    background-color: white;
+    width: 200px;
+}

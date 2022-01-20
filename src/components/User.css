@@ -1,6 +1,8 @@
 .User-profile-pic {
-    width:12vw;
-    height: 60%;
+    /*width:12vw;
+    height: 60%;*/
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border:2px solid var(--gold-color);
     padding: 2px;
@@ -22,3 +24,12 @@
     margin-bottom: 5px;
 }
 
+@media screen and (min-width: 800px) {
+    .User-profile-pic {
+        width:80px;
+        height: 80px;
+    }
+    .User-profile-pic:hover {
+        transform: scale(1.5);
+    }
+}

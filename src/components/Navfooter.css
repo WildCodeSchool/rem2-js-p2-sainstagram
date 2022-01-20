@@ -4,7 +4,7 @@
     height: auto;
     display: flex;
     justify-content: space-evenly;
-    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--back-color);
     padding-top: 5px;
     position: sticky;
     bottom: 0;
@@ -14,12 +14,12 @@
 
 .foot-icon {
     height: 30px;
-    width: auto;
 }
 
-.foot-icon-video {
+.foot-icon-profile {
     height: 30px;
-    width: auto;
+    border-radius: 50%;
+    border:2px solid var(--gold-color);
 }
 
 .isFavorite {
@@ -27,7 +27,6 @@
     width: auto;
     padding-top: 5px;
     /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg%22"); */
-
 }
 
 .notFavorite {
