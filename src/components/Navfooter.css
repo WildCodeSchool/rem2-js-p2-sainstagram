@@ -1,0 +1,41 @@
+
+.navfooter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid var(--border-color);
+    padding-top: 5px;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.icon {
+    height: 30px;
+    width: auto;
+}
+
+.isFavorite {
+    height: 30px;
+    width: auto;
+    padding-top: 5px;
+    /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg%22"); */
+
+}
+
+.notFavorite {
+    height: 30px;
+    width: auto;
+    padding-top: 5px;
+    /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg%22"); */
+
+}
+
+.favorite-emoji {
+    height: 30px;
+    width: auto;
+    padding-top: 5px;
+}
+

@@ -5,7 +5,7 @@ const CardProfile = ({infoProfile}) => {
     return (
         
         <div className='Cardprofile'>
-          <img className='Cardprofile-profile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
+            <img className='Cardprofile-profile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
             <h3 className='Cardprofile-profile-name'>{infoProfile.name}</h3>
             {infoProfile.constellation !== null ? <p className='Cardprofile-profile-constellation'>{infoProfile.category} de {infoProfile.constellation}</p> : <p>{infoProfile.category}</p>}
             <div className="Cardprofile-profile-full-description">
