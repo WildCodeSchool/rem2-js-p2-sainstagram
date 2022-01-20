@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import home from '../assets/home.png';
 import search from '../assets/search.png';
 import video from "../assets/video-icon.png";
@@ -14,10 +14,14 @@ const Navfooter = () => {
     setIsFavorite(true);
     }
 
+
+    
     return (
         <div className='navfooter navbar'>
-            <NavLink to="/" className='navigation-link'>
-                <div><img className='foot-icon' src={home} alt="home-button" /></div>
+            <NavLink  to="/" className='navigation-link'>
+                <div><img onClick={() => {
+                        window.location.href = '/'}}
+                className='foot-icon' src={home} alt="home-button" /></div>
             </NavLink>
             <NavLink to="/"  className='navigation-link'>
                 <div><img className='foot-icon' src={search} alt="search-button" /></div>
