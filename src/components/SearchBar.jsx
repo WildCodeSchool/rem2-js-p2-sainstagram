@@ -36,11 +36,9 @@ function SearchBar() {
     setText(text)
   }
 
-
-
   return (
-    <div className="">
-      <input type="text" 
+    <div className="SearchBar">
+      <input className="input" type="text" 
       onChange = {e => onChangeHandler(e.target.value)}
       value={text}
   //     onBlur={ () => {

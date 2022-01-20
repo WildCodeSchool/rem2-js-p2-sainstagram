@@ -1,0 +1,12 @@
+.SearchBar {
+    height: 85vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    background-color: grey;
+}
+
+.input {
+    width: 50%;
+    text-align: center;
+}
