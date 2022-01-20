@@ -28,8 +28,9 @@ function SearchBar() {
     let matches = []
     if (text.length > 0) {
       matches = users.filter(user => {
-        const regex = new RegExp(`${text}`, "gi");
-        return user.name.match(regex)
+        return user.name.toLowerCase().startsWith(text.toLowerCase())
+        // const regex = new RegExp(`${text}`, "gi");
+        // return user.name.match(regex)
       })
     }
     setSuggestions(matches)
@@ -41,14 +42,19 @@ function SearchBar() {
       <input className="input" type="text" 
       onChange = {e => onChangeHandler(e.target.value)}
       value={text}
-  //     onBlur={ () => {
-  //      setTimeout(() => {
-  //       setSuggestions([])
-  //      }, 100);
-  //    }}
+      onBlur={ () => {
+       setTimeout(() => {
+        setSuggestions([])
+       }, 100);
+     }}
    />
       {suggestions && suggestions.map((suggestion, i) => 
-      <div key={i} className='suggestion' onClick={() => onSuggestionHandler(suggestion.name)}>{suggestion.name}</div>
+      <div key={i} className="suggestion" onClick={() => onSuggestionHandler(suggestion.name)}>
+          <ul className="suggestion-list">
+          <img className="profile-pic" src={suggestion.profilepic} alt={suggestion.name} />
+          <span className="name">{suggestion.name}</span>
+          </ul>
+      </div>
       )}
     </div>
   );
