@@ -13,9 +13,7 @@ const NavProfile = () => {
     useEffect(() => {
         Axios
             .get("https://a.nacapi.com/sainstgram.users")
-            .then((response) => {
-                setUsers(response.data)
-            })
+            .then((response) => setUsers(response.data))
     }, []);
 
 
@@ -25,7 +23,7 @@ const NavProfile = () => {
         if (users.length) {
             for (let i = 0; randomProfile.length < 5; i++) {
                 const j = Math.floor(Math.random() * users.length);
-                if (!randomProfile.includes(users[j]) && users[j].id != 6) {
+                if (!randomProfile.includes(users[j]) && users[j].id !== 6) {
                     randomProfile.push(users[j])
                 };
             }
@@ -36,7 +34,7 @@ const NavProfile = () => {
     return (
         <div className="NavProfile" >
             {randomProfile.map((user) => <Link to={`/Profil/${user.id}`}><User {...user} key={user.id} /></Link>)}
-            <img onClick={ ()=>{setValue({})}} className='nav-refresh-button' src={refresh2} />
+            <img onClick={ ()=>{setValue({})}} className='nav-refresh-button' src={refresh2} alt="New profiles" />
         </div>
         
     )

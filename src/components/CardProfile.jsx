@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./CardProfile.css"
 
-const CardProfile = ({infoProfile}) => {
+const CardProfile = ({ infoProfile }) => {
     return (
-        
-        <div className={`Cardprofile noBackground`} >
-            <img className='Cardprofile-profile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
+        <div className={`Cardprofile noBackground`}>
+            <Link to={`/battle/${infoProfile.id}/null`}>
+                <img className='Cardprofile-profile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
+            </Link>
             <h3 className='Cardprofile-profile-name'>{infoProfile.name}</h3>
             {infoProfile.constellation !== null ? <p className='Cardprofile-profile-constellation'>{infoProfile.category}<br></br><span>Constellation </span> {infoProfile.constellation}</p> : <p>{infoProfile.category}</p>}
             <div className="Cardprofile-profile-full-description">
@@ -13,8 +15,7 @@ const CardProfile = ({infoProfile}) => {
                 <p className='Cardprofile-profile-birth'>Age : {infoProfile.age} ans, Lieu de naissance : {infoProfile.birthplace}</p>
                 <p className='Cardprofile-profile-description'>{infoProfile.description}</p>
             </div>
-        </div> 
+        </div>
     )
 }
-/*${infoProfile.category} */
-export default CardProfile
+export default CardProfile;

@@ -18,7 +18,7 @@
 .icons {
     width: 60%;
     height: 100%;
-    align-self: right;
+    /*align-self: right;*/
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -48,8 +48,8 @@
 .button-icon {
     height: 55%;
     width: 50px;
-    display: flex;
-    justify-content: left;
+    /*display: flex;
+    justify-content: left;*/
     margin-left: 6px;
     object-fit: contain;
     object-position: 100% 50%;
