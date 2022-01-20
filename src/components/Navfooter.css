@@ -16,9 +16,10 @@
     height: 30px;
 }
 
-.foot-icon-video {
+.foot-icon-profile {
     height: 30px;
-    width: auto;
+    border-radius: 50%;
+    border:2px solid var(--gold-color);
 }
 
 .isFavorite {
