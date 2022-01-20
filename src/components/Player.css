@@ -1,0 +1,17 @@
+.Player {
+    border: 1 solid black;
+    margin: 10px;
+}
+.total-life {
+    background-color: red;
+    width: 150px;
+    height: 30px;
+}
+.Life {
+    background-color: lime;
+    height: 30px;
+}
+.Player img {
+    height: 150px;
+    width: 100px;
+}

@@ -17,8 +17,16 @@ const Profile = () => {
             setInfoProfile(response.data[0])});
     }, [params.id])
 
+    function getCategory () {
+        if (infoProfile.category){
+            return infoProfile.category.split("'").pop().split(" ").pop()
+        } else {
+            return "";
+        }
+    }
+
     return (
-        <div className={`Profile ${infoProfile.category}`}>  
+        <div className={`Profile ${getCategory()}`}>  
             <CardProfile infoProfile={infoProfile} />
             <PostList className="PostList-profile" id={parseInt(params.id)}/>
         </div>
