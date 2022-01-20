@@ -9,7 +9,7 @@ const Player = (props) => {
     }, [props.health, props.life]);
     console.log(props);
     return (
-        <div className='Player'>
+        <div className={`Player ${props.className}`}>
             <img src={props.profilepic} alt="Portrait" id={`player${props.id}`}/>
             <p>Name: {props.name}</p>
             <div className='total-life'>
