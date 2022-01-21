@@ -20,13 +20,18 @@ const Profile = () => {
     function getCategory () {
         if (infoProfile.category){
             return infoProfile.category.split("'").pop().split(" ").pop()
-        } else {
+        } elif (infoProfile.name.includes(`Saori`)){
+            return infoProfile.category= (Saori)
+        }
+        else {
             return "";
         }
     }
 
+
+
     return (
-        <div className={`Profile ${getCategory()}`}>  
+        <div className={`Profile ${getCategory()}` ${}}>  
             <CardProfile infoProfile={infoProfile} />
             <PostList className="PostList-profile" id={parseInt(params.id)}/>
         </div>
