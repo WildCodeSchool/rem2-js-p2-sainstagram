@@ -5,7 +5,7 @@ function User(props) {
     return (
         <div className='User'>
             <img className='User-profile-pic' src={props.profilepic} alt={props.name} />
-            <p className='User-profile-name'>{props.name}</p>
+            <p className='User-profile-name'>{props.name ? props.name.split(" ")[0] : props.name}</p>
         </div>
     )
 }

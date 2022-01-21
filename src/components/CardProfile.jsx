@@ -1,20 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./CardProfile.css"
 
-const CardProfile = ({infoProfile}) => {
+const CardProfile = ({ infoProfile }) => {
     return (
-        
-        <div className={`Cardprofile noBackground`} >
-            <img className='Cardprofile-profile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
-            <h3 className='Cardprofile-profile-name'>{infoProfile.name}</h3>
-            {infoProfile.constellation !== null ? <p className='Cardprofile-profile-constellation'>{infoProfile.category}<br></br><span>Constellation </span> {infoProfile.constellation}</p> : <p>{infoProfile.category}</p>}
-            <div className="Cardprofile-profile-full-description">
-                {infoProfile.trainingplace !== null ? <p className='Cardprofile-profile-training'>{infoProfile.trainingplace}</p> : null}
-                <p className='Cardprofile-profile-birth'>Age : {infoProfile.age} ans, Lieu de naissance : {infoProfile.birthplace}</p>
-                <p className='Cardprofile-profile-description'>{infoProfile.description}</p>
+        <div className="Cardprofile">
+            <div className="id-card">
+            <Link to={`/battle/${infoProfile.id}/null`}>
+              <img className='Cardprofile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
+            </Link>
+              <div className="Cardprofile-infos">
+              <h3 className='Cardprofile-name'>{infoProfile.name}  {infoProfile.age} ans</h3>
+              <p className="Cardprofile-category">{infoProfile.category}</p>
+              {infoProfile.constellation !== null ? <p className="Cardprofile-category">Constellation {infoProfile.constellation}</p> : null}
+              {infoProfile.trainingplace !== null ? <p className='Cardprofile-training'>{infoProfile.trainingplace}</p> : null}
+              <p className='Cardprofile-birth'>Lieu de naissance: {infoProfile.birthplace}</p>
+              </div>
             </div>
+            <p className='Cardprofile-description'>{infoProfile.description}</p>
         </div> 
     )
 }
-/*${infoProfile.category} */
+
 export default CardProfile
