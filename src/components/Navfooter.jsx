@@ -18,20 +18,20 @@ const Navfooter = () => {
     
     return (
         <div className='navfooter navbar'>
-            <NavLink  to="/"  className='navigation-link'>
-                <div><img onClick={() => {
-                        window.location.href = '/'}}
-                className='foot-icon' src={home} alt="home-button" /></div>
+            <NavLink  to="/" className='navigation-link'>
+                <img onClick={() => {window.location.href = '/'}}
+                className='foot-icon' src={home} alt="home-button" />
+            </NavLink>
+            <NavLink to="/search"  className='navigation-link'>
+                <img className='foot-icon' src={search} alt="search-button" />
             </NavLink>
             <NavLink to="/"  className='navigation-link'>
-                <div><img className='foot-icon' src={search} alt="search-button" /></div>
+                <img className='foot-icon' src= {video} alt="video-button" />
             </NavLink>
             <NavLink to="/"  className='navigation-link'>
-                <div><img className='foot-icon-video' src= {video} alt="video-button" /></div>
+                <img className='foot-icon' src={send2} alt="send-button" />
             </NavLink>
-            <NavLink to="/"  className='navigation-link'>
-                <div><img className='foot-icon' src={send2} alt="send-button" /></div>
-            </NavLink>
+            <img src="https://i.ibb.co/5402THJ/saori-profilepic.jpg" alt="Saori Kido" className="foot-icon-profile" />
         </div>
     )
 }
