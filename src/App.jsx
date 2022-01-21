@@ -6,6 +6,7 @@ import Search from "./pages/Search";
 
 import Header from './components/Header';
 import Navfooter from './components/Navfooter';
+import Form from './components/Form';
 import './App.css';
 
 function App() {
@@ -13,10 +14,11 @@ function App() {
     <div className="App">
         <Header />    
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}/>
+          <Route path="/addPost" element={<Form />}/>          
           <Route path="/battle/:player1/:player2" element={<BattleArena />} />
-          <Route path="/profil/:id" element={<Profile />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/profil/:id" element={<Profile />}/>
+          <Route path="/search" element={<Search />}/>
         </Routes>
         <Navfooter />
     </div>
