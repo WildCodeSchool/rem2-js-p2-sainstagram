@@ -10,30 +10,36 @@ function Form() {
   }
   return (
     <div className="Formulaire">
-      <h1>Ajoutez votre image</h1>
-      <form onSubmit={validation}>
-        <ul>
-          <li>
-            <label for="picture">url de l'image :</label>
-            <input
-              type="text"
-              name="picture"
-              placeholder="Upload an image"
-            />
-          </li>
-          <li>
-            <label for="caption">Commentaire du post :</label>
-            <input
-              type="text"
-              name="caption"
-              placeholder="Your comment"
-            />
-          </li>
-          <input
-            type="submit">
-          </input>
-        </ul>
-      </form>
+      <div className='TextGlobal'>
+        <h1>Ajoutez votre image</h1>
+          <form onSubmit={validation}>
+            <ul>
+              <li>
+                <label for="picture">url de l'image :</label>
+              </li>
+              <li>
+                <input
+                  type="text"
+                  name="picture"
+                  placeholder=""
+                />
+              </li>
+              <li>
+                <label for="caption">Commentaire du post :</label>
+              </li>
+              <li>
+                <input
+                  type="text"
+                  name="caption"
+                  placeholder=""
+                />
+              </li>
+              <input
+                type="submit">
+              </input>
+            </ul>
+          </form>
+      </div>
     </div>
   )
 }

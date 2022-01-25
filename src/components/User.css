@@ -32,7 +32,8 @@
         height:120px;
     }
     .User-profile-pic:hover {
-        transform: scale(1.5);
+        transform: rotate(-90deg);
+        transition: 2s;
     }
     .User-profile-name {
         font-size: 15px;

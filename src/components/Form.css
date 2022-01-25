@@ -1,57 +1,52 @@
-.Formulaire {    
+.Formulaire {
+    color: rgb(47, 55, 81);
     text-align: center;
-    height: 100vh;
-    background-image: url("https://i.ibb.co/zHpFz66/casey-horner-Rmo-Wq-DCq-N2-E-unsplash.jpg"); 
-    background-size:contain;
-
+    height: 85vh;
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    display: flex;
 }
 
-.Formulaire h1 {
-    padding-top: 50%;
-    margin-bottom: 5%;
+.Formulaire h1{
+    padding-top: 55px;
+    margin-bottom: 30px;
 }
 
-ul{
-    list-style: none; 
+.TextGlobal {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.85;
+    width: 80%;
+    height: 350px;
+    box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
+    border-radius: 5px;
+    background-color: rgba(255,255,255, 0.4);
+}
+
+ul {
+    list-style: none;
 }
 
 li {
-    height: 3em;
+    height: 1.5em;
 }
 
 label {
     display: inline-block;
-    width: 200px;
-    text-align: right;
+    width: 170px;
+    text-align: left;
 }
 
 @media screen and (min-width: 800px) {
-    .Formulaire {    
-        text-align: center;
-        height: 100vh;
-        background-image: url("https://i.ibb.co/YTcYHs8/casey-horner-Rmo-Wq-DCq-N2-E-unsplash.jpg"); 
-        background-size:contain;
-        background-size:cover;
     
+    .TextGlobal {
+        width: 30%;
+        height: 30%;
     }
     
-    .Formulaire h1 {
-        padding-top: 15%;
-        margin-bottom: 5%;
+    .Formulaire h1{
+        padding-top: 25px;
+        margin-bottom: 10px;    
     }
-    
-    ul{
-        list-style: none; 
-    }
-    
-    li {
-        height: 3em;
-    }
-    
-    label {
-        display: inline-block;
-        width: 200px;
-        text-align: right;
-    }
-    
 }
