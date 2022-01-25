@@ -10,7 +10,7 @@
     margin-top: 0;
     margin-bottom: 15px;
     position: sticky;
-    top: 10.2vh;
+    top: 10vh;
     z-index: 100;
     background-color: white;
 }
@@ -48,7 +48,8 @@
         border-radius: 50%;
         border:2px solid #616161;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    
+        cursor: pointer;
     }
+    
     
 }
