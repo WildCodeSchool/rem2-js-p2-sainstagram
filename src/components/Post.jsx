@@ -14,10 +14,20 @@ function date2Human (date) {
 const Post = ({post}) => {
 
     const [isFavorite, setIsFavorite] = useState(false);
+    const [count, setCount] = useState(0);
 
     function handleClickFavorite() {
     setIsFavorite(!isFavorite);
     }
+
+    // function favoriteCount() {
+    //     if (!isFavorite) {
+    //         setCount(count => count+1);
+
+        
+    // }
+
+
     return (
         <div className='post-card'>
             <Link to={`/profil/${post.userid}`}><h3 className='Post-postname'>{post.name}</h3></Link>
@@ -29,7 +39,7 @@ const Post = ({post}) => {
             <div className='favorite-emoji'
                     onClick={handleClickFavorite}>
                         {isFavorite ? "❤️" : "🤍"}
-                </div>
+            </div>
         </div>
     )
 }
