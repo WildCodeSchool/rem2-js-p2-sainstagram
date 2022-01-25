@@ -14,10 +14,23 @@
 
 .id-card {
     width: 90%;
+    height: 120px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+.Cardpicture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: 50% 50%;
+    border:2px solid var(--main-color);
 }
 
 .Cardprofile-picture {
@@ -25,9 +38,7 @@
     width: 90px;
     height: 90px;
     object-fit: contain;
-    object-position: 60% 50%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    object-position: 50% 50%;
     border:2px solid var(--main-color);
 }
 
@@ -40,7 +51,6 @@
 }
 
 .Cardprofile-name {
-    padding-bottom: 5px;
     text-decoration: none;
     color: --text-color;
 }
@@ -50,10 +60,12 @@
 } 
 
 .Cardprofile-description {
-    font-size: 14px;
+    width: 90%;
     padding-top: 5px;
     padding-bottom: 10px;
+    text-align: center;
     font-style: italic;
+    font-size: 12px;
 }
 
 .Or {

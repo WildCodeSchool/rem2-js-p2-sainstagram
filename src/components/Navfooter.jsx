@@ -18,13 +18,15 @@ const Navfooter = () => {
             <NavLink to="/search" className='navigation-link'>
                 <img className='foot-icon' src={search} alt="search-button" />
             </NavLink>
-            <NavLink to="/" className='navigation-link'>
+            <NavLink to="/video" className='navigation-link'>
                 <img className='foot-icon' src={video} alt="video-button" />
             </NavLink>
             <NavLink to="/" className='navigation-link'>
                 <img className='foot-icon' src={send2} alt="send-button" />
             </NavLink>
+            <NavLink to="/Profil/6" className='navigation-link'>
             <img src="https://i.ibb.co/5402THJ/saori-profilepic.jpg" alt="Saori Kido" className="foot-icon-profile" />
+            </NavLink>
         </div>
     )
 }
