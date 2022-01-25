@@ -1,5 +1,6 @@
 .BattleArena {
     background-color: var(--dark-main-color);
+
 }
 .BattleArena button {
     height:20px; 
@@ -18,3 +19,28 @@ div.log {
     background-color: white;
     width: 200px;
 }
+
+
+@media screen and (min-width: 800px) {
+    .BattleArena {
+        background-color: var(--dark-main-color);
+        height: 100vh;    
+    }
+    .BattleArena button {
+        height:20px; 
+        width:100px; 
+        margin: -20px -50px;
+        position:relative;
+        top:-10%; 
+        left:50%;
+    }
+    .Arena {
+        display: flex;
+        justify-content: space-around;
+        background-color: burlywood;
+    }
+    div.log {
+        background-color: white;
+        width: 400px;
+    }
+}    
