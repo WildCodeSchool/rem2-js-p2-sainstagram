@@ -3,8 +3,6 @@
     top: 0;
     z-index: 101;
     background-color: white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
     height: 10vh;
     display: flex;
 }
