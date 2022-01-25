@@ -18,7 +18,7 @@ const Navfooter = () => {
             <NavLink to="/search" className='navigation-link'>
                 <img className='foot-icon' src={search} alt="search-button" />
             </NavLink>
-            <NavLink to="/" className='navigation-link'>
+            <NavLink to="/video" className='navigation-link'>
                 <img className='foot-icon' src={video} alt="video-button" />
             </NavLink>
             <NavLink to="/" className='navigation-link'>
