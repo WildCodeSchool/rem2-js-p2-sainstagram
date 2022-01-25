@@ -2,3 +2,13 @@
     background-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
     background-attachment: fixed;
 }
+
+@media screen and (min-width: 800px) {
+    .home {
+        background-image: url("https://images.alphacoders.com/675/thumb-1920-675142.png");
+        background-size:cover;
+    }
+}   
+
+
+

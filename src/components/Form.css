@@ -1,4 +1,57 @@
-.Formulaire {
+.Formulaire {    
     text-align: center;
     height: 100vh;
+    background-image: url("https://i.ibb.co/zHpFz66/casey-horner-Rmo-Wq-DCq-N2-E-unsplash.jpg"); 
+    background-size:contain;
+
+}
+
+.Formulaire h1 {
+    padding-top: 50%;
+    margin-bottom: 5%;
+}
+
+ul{
+    list-style: none; 
+}
+
+li {
+    height: 3em;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+@media screen and (min-width: 800px) {
+    .Formulaire {    
+        text-align: center;
+        height: 100vh;
+        background-image: url("https://i.ibb.co/YTcYHs8/casey-horner-Rmo-Wq-DCq-N2-E-unsplash.jpg"); 
+        background-size:contain;
+        background-size:cover;
+    
+    }
+    
+    .Formulaire h1 {
+        padding-top: 15%;
+        margin-bottom: 5%;
+    }
+    
+    ul{
+        list-style: none; 
+    }
+    
+    li {
+        height: 3em;
+    }
+    
+    label {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+    }
+    
 }
