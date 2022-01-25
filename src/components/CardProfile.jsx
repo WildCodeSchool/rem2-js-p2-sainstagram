@@ -6,7 +6,7 @@ const CardProfile = ({ infoProfile }) => {
     return (
         <div className="Cardprofile">
             <div className="id-card">
-            <Link to={`/battle/${infoProfile.id}/null`}>
+            <Link className='Cardpicture-container' to={`/battle/${infoProfile.id}/null`}>
               <img className='Cardprofile-picture' src={infoProfile.profilepic} alt={infoProfile.name} />
             </Link>
               <div className="Cardprofile-infos">
