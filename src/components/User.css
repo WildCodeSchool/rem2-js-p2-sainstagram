@@ -28,8 +28,8 @@
 
 @media screen and (min-width: 800px) {
     .User-profile-pic {
-        width:120px;
-        height:120px;
+        width:80px;
+        height:80px;
     }
     .User-profile-pic:hover {
         transform: rotate(-90deg);
