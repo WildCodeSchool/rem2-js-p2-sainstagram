@@ -70,12 +70,11 @@
 
 @media screen and (min-width: 800px) {
     .post-card {
-        width: 45%;
-        height: 45vh;
+        width: 450px;
+        height: 450px;
         color: --text-color;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 10px;
@@ -94,12 +93,14 @@
         display: flex;
         align-self: center;
         margin: 10px;
+        height: 250px;
+        width: 300px;
     
     }
     
     .post-img { 
-        max-height: 250px;
-        width: 350px;
+        height: 100%;
+        width: 100%;
         object-fit: contain;
         align-self: center;  
         background-color: #272727;
