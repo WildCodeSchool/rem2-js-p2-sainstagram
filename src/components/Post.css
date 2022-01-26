@@ -120,9 +120,9 @@
     
     .post-date {
         font-size: 12px;
-        text-align: right;
-        margin-right: 20px;
-
+        text-align: left;
+        margin-left: 7%;
+        
     }
 }
 
