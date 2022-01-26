@@ -1,12 +1,22 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { Component } from 'react';
+import { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+
 import home from '../assets/home.png';
 import search from '../assets/search.png';
 import send2 from '../assets/send2.png';
 import video from "../assets/video-icon.png";
 import './Navfooter.css';
+import PostList from './PostList';
 
 const Navfooter = () => {
+    const [isFavorite, setIsFavorite] = useState(false);
+    const [refreshHome, setRefreshHome] = useState();
+
+    function handleClickFavorite() {
+    setIsFavorite(true);
+    }
+    
     return (
         <div className='navfooter'>
             <NavLink to="/" className='navigation-link'>

@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className='home'>
                 <NavProfile />              
-                <PostList/>
+                <PostList />
         </div>
     )
 }
