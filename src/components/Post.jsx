@@ -1,6 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
+import Axios from "axios";
 import './Post.css'
+
 
 function date2Human (date) {
     // 01234567
@@ -12,20 +14,13 @@ function date2Human (date) {
 
 
 const Post = ({post}) => {
-
     const [isFavorite, setIsFavorite] = useState(false);
-    const [count, setCount] = useState(0);
 
-    function handleClickFavorite() {
-    setIsFavorite(!isFavorite);
+
+    function handleClickFavorite(){
+        setIsFavorite(!isFavorite);
     }
 
-    // function favoriteCount() {
-    //     if (!isFavorite) {
-    //         setCount(count => count+1);
-
-        
-    // }
 
 
     return (
@@ -34,11 +29,17 @@ const Post = ({post}) => {
             <div className="img-container">
                 <img className="post-img" src={post.picture} alt={post.name} />
             </div>
+            {isFavorite ? 
+                    <div onClick={handleClickFavorite}> 
+                        
+                        <p className="microUserLike">Aimé par vous</p>
+                    </div> : null}
             <p className='post-caption'><span className="who-posted">{post.name}</span>{" "}"{post.caption}"</p>
             <p className='post-date'>Publié le{" "}{date2Human(post.date)}</p>
             <div className='favorite-emoji'
                     onClick={handleClickFavorite}>
                         {isFavorite ? "❤️" : "🤍"}
+                        
             </div>
         </div>
     )
