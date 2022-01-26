@@ -16,9 +16,13 @@ function get_data(player1, player2) {
     }
     let p1 = {}, p2={};
     if (player2==='null') {
-        player2 = Math.floor(Math.random()*users.length);
+        while (JSON.stringify(p2)===JSON.stringify({})){
+            let player = Math.floor(Math.random()*users.length);
+            if (player!==parseInt(player1)){
+                p2 = get_user_by_id(player);
+            }
+        }
         p1 = get_user_by_id(player1);
-        p2 = get_user_by_id(player2);
     }else{
         p1 =  data[player1];
         p2 = data[player2];
