@@ -36,6 +36,7 @@
     height: 50px;
     border-radius: 50%;
     margin: 0 10px 0 0;
+    cursor: pointer;
 }
 
 .name {
@@ -62,4 +63,54 @@ h4 {
     background-color: rgba(255,255,255, 0.4);
     box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
     border-radius: 5px;
+
+}
+
+@media screen and (min-width: 800px) {
+    .SearchBar {        
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        background-color: grey;
+    }
+    
+    .input {
+        height: 5vh;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: large;
+    }
+    
+    .suggestion {
+        color: white;
+        width: 50%;
+        margin: 0px auto;
+        padding: 5px;
+    }
+    
+    .suggestion-list {
+        overflow: hidden;
+        border-bottom: 1px solid white;
+        padding: 0 0 10px;
+    }
+    
+    .profile-pic {
+        float: left;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+    }
+    
+    .name {
+        display: block;
+        width: 100%;
+        font-weight: bolder;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+   
 }
