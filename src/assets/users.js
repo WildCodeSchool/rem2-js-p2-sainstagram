@@ -1,23 +1,23 @@
-const users = [ {
-  "id": 1,
-  "name": "Seiya",
-  "age": "13",
-  "height": "165cm",
-  "weight": "53kg",
-  "birthday": "1er Décembre",
-  "birthplace": "Japon",
-  "bloodtype": "B",
-  "category": "Chevalier de Bronze",
-  "constellation": "Pégase",
-  "trainingplace": "Sanctuaire, Grèce",
-  "profilepic":
-    "https://i.ibb.co/LZNkthX/seiya-profilepic.jpg",
-  "description": "Pour la gloire d'Athéna!",
-  "abilities": [
-    "les Météores de Pégase",
-    "la Comète de Pégase",
-    "le Tourbillon de Pégase"
-  ]
+const users = [
+  {
+    "id": 1,
+    "name": "Seiya",
+    "age": "13",
+    "height": "165cm",
+    "weight": "53kg",
+    "birthday": "1er Décembre",
+    "birthplace": "Japon",
+    "bloodtype": "B",
+    "category": "Chevalier de Bronze",
+    "constellation": "de Pégase",
+    "trainingplace": "Sanctuaire, Grèce",
+    "profilepic": "https://i.ibb.co/LZNkthX/seiya-profilepic.jpg",
+    "description": "Pour la gloire d'Athéna!",
+    "abilities": [
+      "les Météores de Pégase",
+      "la Comète de Pégase",
+      "le Tourbillon de Pégase"
+    ]
   },
   {
     "id": 2,
@@ -29,10 +29,9 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "A",
     "category": "Chevalier de Bronze",
-    "constellation": "Dragon",
+    "constellation": "du Dragon",
     "trainingplace": "Lianxi, Chine",
-    "profilepic":
-      "https://i.ibb.co/MSyXpJw/shiryu-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/MSyXpJw/shiryu-profilepic.jpg",
     "description": "Je donnerais ma vie pour protéger mes amis",
     "abilities": [
       "la Colère du Dragon",
@@ -51,12 +50,10 @@ const users = [ {
     "birthplace": "Russie",
     "bloodtype": "O",
     "category": "Chevalier de Bronze",
-    "constellation": "Cygne",
+    "constellation": "du Cygne",
     "trainingplace": "Sibérie orientale",
-    "profilepic":
-      "https://i.ibb.co/cvKXYwy/hyoga-profilepic.jpg",
-    "description":
-      "Penser qu'un rêve est une chose irréalisable, c'est être tel un vieillard qui a renoncé à vivre.",
+    "profilepic": "https://i.ibb.co/cvKXYwy/hyoga-profilepic.jpg",
+    "description": "Penser qu'un rêve est une chose irréalisable, c'est être tel un vieillard qui a renoncé à vivre.",
     "abilities": [
       "la Poussière de Diamant",
       "Tonnerre de l'Aube",
@@ -73,12 +70,10 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "A",
     "category": "Chevalier de Bronze",
-    "constellation": "Andromède",
+    "constellation": "d'Andromède",
     "trainingplace": "Ile d'Andromède, Somalie",
-    "profilepic":
-      "https://i.ibb.co/sspBTpf/shun-profilepic.jpg",
-    "description":
-      "Je n'aime pas me battre mais je ferai tout pour protéger ceux que j'aime",
+    "profilepic": "https://i.ibb.co/sspBTpf/shun-profilepic.jpg",
+    "description": "Je n'aime pas me battre mais je ferai tout pour protéger ceux que j'aime",
     "abilities": [
       "Chaîne Nébulaire",
       "Cercles de Défense",
@@ -97,13 +92,14 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "AB",
     "category": "Chevalier de Bronze",
-    "constellation": "Phénix",
+    "constellation": "du Phénix",
     "trainingplace": "Ile de la Reine Morte, Pacifique Sud",
-    "profilepic":
-      "https://i.ibb.co/y5QBGNq/ikki-profilepic.jpg",
-    "description":
-      "Je n'ai d'ordres à recevoir de personne, pas même d'une déesse !",
-    "abilities": ["l'Illusion du Phénix", "les Ailes du Phénix"]
+    "profilepic": "https://i.ibb.co/y5QBGNq/ikki-profilepic.jpg",
+    "description": "Je n'ai d'ordres à recevoir de personne, pas même d'une déesse !",
+    "abilities": [
+      "l'Illusion du Phénix",
+      "les Ailes du Phénix"
+    ]
   },
   {
     "id": 6,
@@ -117,10 +113,9 @@ const users = [ {
     "category": "Déesse",
     "constellation": null,
     "trainingplace": null,
-    "profilepic":
-      "https://i.ibb.co/5402THJ/saori-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/5402THJ/saori-profilepic.jpg",
     "description": "Je suis la réincarnation d'Athéna!",
-    "abilities": [ ]
+    "abilities": []
   },
   {
     "id": 7,
@@ -132,12 +127,13 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "B",
     "category": "Chevalier de Bronze",
-    "constellation": "Licorne",
+    "constellation": "de la Licorne",
     "trainingplace": "Oran, Algérie",
-    "profilepic":
-      "https://i.ibb.co/YbLDttn/jabu-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/YbLDttn/jabu-profilepic.jpg",
     "description": "Je suis prêt à tous les sacrifice pour Saori",
-    "abilities": ["Galop de la Licorne"]
+    "abilities": [
+      "Galop de la Licorne"
+    ]
   },
   {
     "id": 8,
@@ -149,12 +145,13 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "A",
     "category": "Chevalier de Bronze",
-    "constellation": "Grande Ourse",
+    "constellation": "de la Grande Ourse",
     "trainingplace": "Montagnes Rocheuses, Canada",
-    "profilepic":
-      "https://i.ibb.co/BzdJCXZ/geki-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/BzdJCXZ/geki-profilepic.jpg",
     "description": "Rien ne vaut la force brute",
-    "abilities": ["Prise de l'Ours"]
+    "abilities": [
+      "Prise de l'Ours"
+    ]
   },
   {
     "id": 9,
@@ -166,12 +163,13 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "B",
     "category": "Chevalier de Bronze",
-    "constellation": "Hydre",
+    "constellation": "de l'Hydre",
     "trainingplace": "Lake Holtz, Finlande",
-    "profilepic":
-      "https://i.ibb.co/LZ5z989/ichi-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/LZ5z989/ichi-profilepic.jpg",
     "description": "Je l'aurai un jour, je l'aurai",
-    "abilities": ["Griffes de l'Hydre"]
+    "abilities": [
+      "Griffes de l'Hydre"
+    ]
   },
   {
     "id": 10,
@@ -183,12 +181,13 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "B",
     "category": "Chevalier de Bronze",
-    "constellation": "Lionet",
+    "constellation": "du Lionet",
     "trainingplace": "Kilimandjaro, Tanzanie",
-    "profilepic":
-      "https://i.ibb.co/2n3dLvw/ban-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/2n3dLvw/ban-profilepic.jpg",
     "description": "Je suis là parce que je n'ai pas eu le choix",
-    "abilities": ["le Sursaut du Lionnet"]
+    "abilities": [
+      "le Sursaut du Lionnet"
+    ]
   },
   {
     "id": 11,
@@ -200,12 +199,13 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "AB",
     "category": "Chevalier de Bronze",
-    "constellation": "Loup",
+    "constellation": "du Loup",
     "trainingplace": "Bomihills, Libéria",
-    "profilepic":
-      "https://i.ibb.co/mC8Q1r9/nachi-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/mC8Q1r9/nachi-profilepic.jpg",
     "description": "Je suis sûr que je peux le faire",
-    "abilities": ["Hurlement Mortel"]
+    "abilities": [
+      "Hurlement Mortel"
+    ]
   },
   {
     "id": 12,
@@ -217,10 +217,9 @@ const users = [ {
     "birthplace": "Ethiopie",
     "bloodtype": "O",
     "category": "Chevalier de Bronze",
-    "constellation": "Caméléon",
+    "constellation": "du Caméléon",
     "trainingplace": "Ile d'Andromède, Somalie",
-    "profilepic":
-      "https://i.ibb.co/K9dx5tH/june-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/K9dx5tH/june-profilepic.jpg",
     "description": "Je suis quelqu'un d'obstiné, sachez-le",
     "abilities": []
   },
@@ -234,13 +233,13 @@ const users = [ {
     "birthplace": "Japon",
     "bloodtype": "A",
     "category": "Chevalier d'Argent",
-    "constellation": "l'Aigle",
+    "constellation": "de l'Aigle",
     "trainingplace": "Sanctuaire, Grèce",
     "profilepic": "https://i.ibb.co/6gDW8Cv/marin-profilepic.jpg",
     "description": "Jeune prof japonaise expat en Grèce, toujours là pour toi Seiya!",
     "abilities": [
       "La précipitation aigle",
-      "Le poing météore",
+      "Le poing météore"
     ]
   },
   {
@@ -253,12 +252,12 @@ const users = [ {
     "birthplace": "Italie",
     "bloodtype": "B",
     "category": "Chevalier d'Argent",
-    "constellation": "Serpentaire",
+    "constellation": "du Serpentaire",
     "trainingplace": "Sanctuaire, Grèce",
     "profilepic": "https://i.ibb.co/256gvbP/shina-profilepic.jpg",
     "description": "Tempérament de feu :flame",
     "abilities": [
-      "Le soleil noir",
+      "Le soleil noir"
     ]
   },
   {
@@ -271,12 +270,12 @@ const users = [ {
     "birthplace": "France",
     "bloodtype": "O",
     "category": "Chevalier d'Argent",
-    "constellation": "le Lézard",
+    "constellation": "du Lézard",
     "trainingplace": "France, Côte d'Azur",
     "profilepic": "https://i.ibb.co/1rKjb77/misty1.jpg",
     "description": "Feel CUTE, will NOT delete later",
     "abilities": [
-      "Le voyageur de marbre",
+      "Le voyageur de marbre"
     ]
   },
   {
@@ -289,12 +288,12 @@ const users = [ {
     "birthplace": "Irak",
     "bloodtype": "B",
     "category": "Chevalier d'Argent",
-    "constellation": "le Centaure",
+    "constellation": "du Centaure",
     "trainingplace": "Ile du Centaure",
     "profilepic": "https://i.ibb.co/HHzkT5L/Babel-profilepic.jpg",
     "description": "",
     "abilities": [
-      "Le vortex de flammes",
+      "Le vortex de flammes"
     ]
   },
   {
@@ -307,13 +306,13 @@ const users = [ {
     "birthplace": "Nouvelle Zélande",
     "bloodtype": "A",
     "category": "Chevalier d'Argent",
-    "constellation": "la Baleine",
+    "constellation": "de la Baleine",
     "trainingplace": "Nouvelle Zélande",
     "profilepic": "https://i.ibb.co/pRyRPm9/t-l-chargement.jpg",
     "description": "Puissant comme une baleine, je t'envoie en l'air comme une plume. ",
-    "abilities":[
-      "Le bombardier jaillissant",
-    ]     
+    "abilities": [
+      "Le bombardier jaillissant"
+    ]
   },
   {
     "id": 18,
@@ -325,13 +324,13 @@ const users = [ {
     "birthplace": "Danemark",
     "bloodtype": "B",
     "category": "Chevalier d'Argent",
-    "constellation": "le Chien",
+    "constellation": "du Chien",
     "trainingplace": "Autriche, Brocken",
-    "profilepic": "https://i.ibb.co/545gqsN/images-1.jpg",
+    "profilepic": "https://i.ibb.co/PC648zP/images-1-Convert-Image.jpg",
     "description": "Lis dans les coeurs depuis 2005.",
-    "abilities":[
-      "Le million d'attaques fantômes",
-    ] 
+    "abilities": [
+      "Le million d'attaques fantômes"
+    ]
   },
   {
     "id": 19,
@@ -343,13 +342,13 @@ const users = [ {
     "birthplace": "Angleterre",
     "bloodtype": "A",
     "category": "Chevalier d'Argent",
-    "constellation": "le Corbeau",
+    "constellation": "du Corbeau",
     "trainingplace": "Angleterre/ Ecosse",
-    "profilepic": "https://i.ibb.co/H4H7f63/jamian-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/6JV9Xph/jamian-profilepic-Convert-Image.jpg",
     "description": "Un peu émo, un peu punk",
     "abilities": [
-      "L' arbre d'ailes noir'",
-    ] 
+      "L'arbre d'ailes noir"
+    ]
   },
   {
     "id": 20,
@@ -361,13 +360,13 @@ const users = [ {
     "birthplace": "Italie",
     "bloodtype": "AB",
     "category": "Chevalier d'Argent",
-    "constellation": "le Cerbère",
+    "constellation": "du Cerbère",
     "trainingplace": "Italie, Sicile",
-    "profilepic": "https://i.ibb.co/3Rn8TyY/t-l-chargement.jpg",
+    "profilepic": "https://i.ibb.co/qrG9j8H/profiledante-Convert-Image.jpg",
     "description": "Je t'emmènerai aux portes de l'enfer et bien plus loin encore",
     "abilities": [
-      "La chaîne  infernale à billes d'acier",
-    ] 
+      "La chaîne  infernale à billes d'acier"
+    ]
   },
   {
     "id": 21,
@@ -379,13 +378,13 @@ const users = [ {
     "birthplace": "Grèce",
     "bloodtype": "B",
     "category": "Chevalier d'Argent",
-    "constellation": "le Cocher",
+    "constellation": "du Cocher",
     "trainingplace": "Sanctuaire, Grèce",
     "profilepic": "https://i.ibb.co/TM4zJP5/t-l-chargement-1.jpg",
     "description": "Tu peux pas test. Tout pour mon bro Dante.",
     "abilities": [
-      "L'attaque de disque",
-    ], 
+      "L'attaque de disque"
+    ]
   },
   {
     "id": 22,
@@ -397,12 +396,12 @@ const users = [ {
     "birthplace": "Arabie Saoudite",
     "bloodtype": "A",
     "category": "Chevalier d'Argent",
-    "constellation": "Persée",
+    "constellation": "de Persée",
     "trainingplace": "Autriche",
-    "profilepic": "https://i.ibb.co/Xsggcc2/t-l-chargement-6.jpg",
+    "profilepic": "https://i.ibb.co/mH3QJ4Z/algol-profilepic-Convert-Image.jpg",
     "description": "La puissance - ROHFF",
     "abilities": [
-      "La Gorgone de Ra's al Ghul",
+      "La Gorgone de Ra's al Ghul"
     ]
   },
   {
@@ -415,12 +414,12 @@ const users = [ {
     "birthplace": "Allemagne de l'Est",
     "bloodtype": "O",
     "category": "Chevalier d'Argent",
-    "constellation": "le grand Chien",
+    "constellation": "du Grand Chien",
     "trainingplace": "Sanctuaire, Grèce",
     "profilepic": "https://i.ibb.co/9VJRV9Y/t-l-chargement.jpg",
     "description": "Work hard, play hard",
     "abilities": [
-      "Le grand descructeur de montagnes"
+      "Le grand destructeur de montagnes"
     ]
   },
   {
@@ -433,9 +432,9 @@ const users = [ {
     "birthplace": "Afrique",
     "bloodtype": "O",
     "category": "Chevalier d'Argent",
-    "constellation": "Héraclès",
+    "constellation": "d'Héraclès",
     "trainingplace": "Ouganda",
-    "profilepic": "https://i.ibb.co/vZwKy0m/t-l-chargement.jpg",
+    "profilepic": "https://i.ibb.co/3FvmnKn/t-l-chargement-Convert-Image.jpg",
     "description": "Fitlife, prise de masse, je ne manque jamais le leg day",
     "abilities": [
       "Le Kornéhoros"
@@ -451,9 +450,9 @@ const users = [ {
     "birthplace": "Tibet",
     "bloodtype": "A",
     "category": "Chevalier d'Or",
-    "constellation": "Bélier",
+    "constellation": "du Bélier",
     "trainingplace": "Jamir",
-    "profilepic": "https://fr.web.img5.acsta.net/r_1920_1080/newsv7/18/02/09/15/08/54593460.jpg",
+    "profilepic": "https://i.ibb.co/S3bt5k2/mu-Convert-Image.jpg",
     "description": "",
     "abilities": [
       "Crystal Wall",
@@ -462,7 +461,6 @@ const users = [ {
       "Crystal Net"
     ]
   },
-
   {
     "id": 26,
     "name": "Aldébaran",
@@ -473,13 +471,14 @@ const users = [ {
     "birthplace": "Tibet",
     "bloodtype": "B",
     "category": "Chevalier d'Or",
-    "constellation": "Taureau",
+    "constellation": "du Taureau",
     "trainingplace": "Brésil",
-    "profilepic": "https://fr.web.img4.acsta.net/r_1920_1080/newsv7/18/02/09/14/53/01081260.jpg",
+    "profilepic": "https://i.ibb.co/w75mryN/aldebarran-Convert-Image.jpg",
     "description": "",
-    "abilities": ["Great Horn"]
+    "abilities": [
+      "Great Horn"
+    ]
   },
-
   {
     "id": 27,
     "name": "Saga",
@@ -490,9 +489,9 @@ const users = [ {
     "birthplace": "Grèce",
     "bloodtype": "B",
     "category": "Chevalier d'Or",
-    "constellation": "Gémeaux",
+    "constellation": "du Gémeaux",
     "trainingplace": "Grèce",
-    "profilepic": "https://fr.web.img5.acsta.net/r_1920_1080/newsv7/18/02/09/15/09/45719120.jpg",
+    "profilepic": "https://i.ibb.co/qJ4Z700/saga-Convert-Image.jpg",
     "description": "",
     "abilities": [
       "Galaxian Explosion",
@@ -500,7 +499,6 @@ const users = [ {
       "Genrô Maô Ken"
     ]
   },
-
   {
     "id": 28,
     "name": "Masque de Mort",
@@ -511,16 +509,15 @@ const users = [ {
     "birthplace": "Italie",
     "bloodtype": "A",
     "category": "Chevalier d'Or",
-    "constellation": "Cancer",
+    "constellation": "du Cancer",
     "trainingplace": "Sicile",
-    "profilepic": "https://fr.web.img2.acsta.net/r_1920_1080/newsv7/18/02/09/14/53/00862510.jpg",
+    "profilepic": "https://i.ibb.co/1ZP3gFw/masque-Convert-Image.jpg",
     "description": "",
     "abilities": [
       "Seki Shi Ki Mei Kai Ha",
       "Tseih She Ke"
     ]
   },
-
   {
     "id": 29,
     "name": "Aiolia",
@@ -531,9 +528,9 @@ const users = [ {
     "birthplace": "Grèce",
     "bloodtype": "O",
     "category": "Chevalier d'Or",
-    "constellation": "Lion",
+    "constellation": "du Lion",
     "trainingplace": "Grèce",
-    "profilepic": "https://fr.web.img6.acsta.net/r_1920_1080/newsv7/18/02/09/15/29/26317460.jpg",
+    "profilepic": "https://i.ibb.co/YNsH34n/aiolia-Convert-Image.jpg",
     "description": "",
     "abilities": [
       "Lightning Plasma",
@@ -541,7 +538,6 @@ const users = [ {
       "le Photon Burst"
     ]
   },
-
   {
     "id": 30,
     "name": "Shaka",
@@ -552,9 +548,9 @@ const users = [ {
     "birthplace": "Inde",
     "bloodtype": "AB",
     "category": "Chevalier d'Or",
-    "constellation": "Vierge",
+    "constellation": "de la Vierge",
     "trainingplace": "Inde",
-    "profilepic": "https://fr.web.img2.acsta.net/r_1920_1080/newsv7/18/02/09/14/51/20486220.jpg",
+    "profilepic": "https://i.ibb.co/DDmPc5s/shaka-Convert-Image.jpg",
     "description": "",
     "abilities": [
       "Ten Bu Hô Rin",
@@ -565,7 +561,6 @@ const users = [ {
       "Ohm"
     ]
   },
-
   {
     "id": 31,
     "name": "Dohko",
@@ -576,16 +571,15 @@ const users = [ {
     "birthplace": "Chine",
     "bloodtype": "A",
     "category": "Chevalier d'Or",
-    "constellation": "Balance",
+    "constellation": "de la Balance",
     "trainingplace": "Chine",
-    "profilepic": "https://fr.web.img5.acsta.net/r_1920_1080/newsv7/18/02/09/15/29/55656480.jpg",
+    "profilepic": "https://i.ibb.co/2Z7xzd2/dohko-Convert-Image.jpg",
     "description": "",
     "abilities": [
-      "Le Dragon Ascendant", 
+      "Le Dragon Ascendant",
       "les Cent Dragons de Rozan"
     ]
   },
-
   {
     "id": 32,
     "name": "Milo",
@@ -596,16 +590,15 @@ const users = [ {
     "birthplace": "Grèce",
     "bloodtype": "B",
     "category": "Chevalier d'Or",
-    "constellation": "Scorpion",
+    "constellation": "du Scorpion",
     "trainingplace": "Grèce",
-    "profilepic": "https://fr.web.img6.acsta.net/r_1920_1080/newsv7/18/02/09/14/53/26057000.jpg",
+    "profilepic": "https://i.ibb.co/QX1MkVB/milo-Convert-Image.jpg",
     "description": "",
     "abilities": [
       "Restriction",
       "Scarlet Needle"
     ]
   },
-
   {
     "id": 33,
     "name": "Aiolos",
@@ -616,11 +609,13 @@ const users = [ {
     "birthplace": "Grèce",
     "bloodtype": "O",
     "category": "Chevalier d'Or",
-    "constellation": "Sagittaire",
+    "constellation": "du Sagittaire",
     "trainingplace": "Grèce",
-    "profilepic": "https://fr.web.img6.acsta.net/r_1920_1080/newsv7/18/02/09/14/53/00971880.jpg",
+    "profilepic": "https://i.ibb.co/vd34dxX/aiolos-Convert-Image.jpg",
     "description": "",
-    "abilities": ["Atomic Thunder Bolt"]
+    "abilities": [
+      "Atomic Thunder Bolt"
+    ]
   },
   {
     "id": 34,
@@ -632,12 +627,12 @@ const users = [ {
     "birthplace": "Espagne",
     "bloodtype": "B",
     "category": "Chevalier d'Or",
-    "constellation": "Capricorne",
+    "constellation": "du Capricorne",
     "trainingplace": "Espagne",
-    "profilepic": "https://fr.web.img4.acsta.net/r_1920_1080/newsv7/18/02/09/15/30/17609890.jpg",
+    "profilepic": "https://i.ibb.co/GsjVY6x/shura-Convert-Image.jpg",
     "description": "",
     "abilities": [
-      "Excalibur", 
+      "Excalibur",
       "Jumping Stone"
     ]
   },
@@ -651,9 +646,9 @@ const users = [ {
     "birthplace": "France",
     "bloodtype": "A",
     "category": "Chevalier d'Or",
-    "constellation": "Verseau",
+    "constellation": "du Verseau",
     "trainingplace": "Sibérie",
-    "profilepic": "https://fr.web.img4.acsta.net/r_1920_1080/newsv7/18/02/09/15/31/13579350.jpg",
+    "profilepic": "https://i.ibb.co/5BVshLs/camus-Convert-Image.jpg",
     "description": "",
     "abilities": [
       "Aurora Execution",
@@ -661,7 +656,6 @@ const users = [ {
       "Diamond Dust"
     ]
   },
-
   {
     "id": 36,
     "name": "Aphrodite",
@@ -671,16 +665,15 @@ const users = [ {
     "birthplace": "Suede",
     "bloodtype": "O",
     "category": "Chevalier d'Or",
-    "constellation": "Poissons",
+    "constellation": "des Poissons",
     "trainingplace": "Groenland",
-    "profilepic": "https://fr.web.img2.acsta.net/r_1920_1080/newsv7/18/02/09/14/55/48026660.jpg",
+    "profilepic": "https://i.ibb.co/L1X9pPR/aphrodite-Convert-Image.jpg",
     "description": "",
     "abilities": [
-      "Crystal Wall", 
+      "Crystal Wall",
       "Stardust Revolution",
       "Starlight exctinction"
     ]
-  },
-  
+  }
 ]
 export default users;
