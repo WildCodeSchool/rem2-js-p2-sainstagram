@@ -42,13 +42,21 @@ const BattleArena = () => {
     const [looser, setLooser] = useState(null);
 
     function round(player1, player2, turn) {
+        function playerAttack(player){
+            if (player.abilities.length){
+                let weapon = player.abilities[rollDice(player.abilities.length)-1];
+                return `${player.name} attaque avec ${weapon}!`
+            }else {
+                return `${player.name} attaque !`
+            }
+        }
         setP1ClassName('');
         setP2ClassName('');
         let attack, defense, result, message = [];
         if (turn === 0) {
-            message.push(`${player1.name} attaque !`)
+            message.push(playerAttack(player1));
         } else {
-            message.push(`${player2.name} attaque !`)
+            message.push(playerAttack(player2));
         }
         attack = rollDice(18);
         defense = rollDice(12);
