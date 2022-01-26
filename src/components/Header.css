@@ -6,7 +6,9 @@
     height: 10vh;
     display: flex;
 }
-
+.logo-link {
+    max-width: 600px; 
+}
 .Header-logo {
     height: 60%;
     margin-top: 20px;
@@ -62,7 +64,6 @@
 }
 
 @media screen and (min-width: 800px) {
-    
     .icons-container {
         max-width: 40px;
         position: right;
