@@ -63,7 +63,7 @@ h4 {
 
 @media screen and (min-width: 800px) {
     .SearchBar {
-        height: 83vh;
+        height: 82vh;
         width: 100%;
         text-align: center;
         padding-top: 40px;
