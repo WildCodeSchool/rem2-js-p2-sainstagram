@@ -45,7 +45,6 @@ function SearchBar() {
         onChange={e => onChangeHandler(e.target.value)}
         value={text}
       /></div>
-      <div className="search-results">
       {suggestions && suggestions.map((suggestion, i) =>
         <div key={i} className="suggestion" onClick={() => onSuggestionHandler(suggestion.name)}>
           <ul className="suggestion-list">
@@ -54,7 +53,6 @@ function SearchBar() {
           </ul>
         </div>
       )}
-      </div>
     </div>
   );
 }
