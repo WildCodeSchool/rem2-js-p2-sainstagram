@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
+import { useState } from 'react';
+import ReelsSainstagram from '../assets/Reels_Sainstagram';
 
 function Reels() {
-
-    const playLists = "https://www.youtube.com/watch?v=5S_7YJAFZTo";
+    const [shorts, setShorts] = useState([]);
 
   return (
   
     <div className="Reels">
         <ReactPlayer
-        url={playLists}
+        url={shorts.url}
         controls
         playing
         muted

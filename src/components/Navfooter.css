@@ -1,7 +1,7 @@
 
 .navfooter {
     width: 100%;
-    height: auto;
+    height: 5vh;
     display: flex;
     justify-content: space-evenly;
     border-top: 2px solid var(--back-color);
