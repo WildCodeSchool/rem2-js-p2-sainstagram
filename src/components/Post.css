@@ -59,6 +59,15 @@
     margin-left: 16px;
 }
 
+.favorite-emoji {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+
+}
+
 @media screen and (min-width: 800px) {
     .post-card {
         width: 45%;
@@ -115,3 +124,4 @@
 
     }
 }
+
