@@ -1,23 +1,14 @@
-.BattleArena {
+.Arena {
     background-color: var(--dark-main-color);
     display: flex;
     flex-direction: column;
-
+    justify-content: space-around;
 }
-.BattleArena button {
+.Arena button {
     height:20px; 
     width:100px; 
-    /*margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-    left:50%;*/
 }
-.Arena {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: burlywood;
-}
+
 div.players {
     display: flex;
 }
@@ -28,17 +19,13 @@ div.log {
 }
 
 @media screen and (min-width: 800px) {
-    .BattleArena {
+    .Arena {
         background-color: var(--dark-main-color);
-        height: 100vh;    
+        height: 100%;    
     }
-    .BattleArena button {
+    .Arena button {
         height:20px; 
         width:100px; 
-        /*margin: -20px -50px;
-        position:relative;
-        top:-10%; 
-        left:50%;*/
     }
 
     div.log {
