@@ -6,8 +6,8 @@ import PostList from '../components/PostList'
 const Home = () => {
     return (
         <div className='home'>
-                <NavProfile/>              
-                <PostList/>
+                <NavProfile />              
+                <PostList />
         </div>
     )
 }
