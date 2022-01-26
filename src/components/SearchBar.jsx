@@ -39,7 +39,7 @@ function SearchBar() {
   }
 
   return (
-    <div className="SearchBar">
+    <div>
       <div className="searchbar-container"><h4>Chercher un chevalier</h4>
       <input className="input" type="text"
         onChange={e => onChangeHandler(e.target.value)}
