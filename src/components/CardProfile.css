@@ -3,12 +3,68 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 15px;
-    position: sticky;
+    height: 25%;
+    padding-bottom: 15px;
     top: 0;
-    z-index: 101;
+    z-index: 100;
     background-color: white;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.id-card {
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.Cardpicture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: 50% 50%;
+    border:2px solid var(--main-color);
+}
+
+.Cardprofile-picture {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    object-position: 50% 50%;
+    border:2px solid var(--main-color);
+}
+
+.Cardprofile-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.Cardprofile-name {
+    text-decoration: none;
     color: --text-color;
+}
+
+.Cardprofile-category {
+    font-weight: 600;
+} 
+
+.Cardprofile-description {
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-style: italic;
     font-size: 12px;
 }
 
@@ -24,43 +80,43 @@
     border-bottom: 2px solid var(--silver-color);
 }
 
-.noBackground {
-    background-color: white;
-} 
 
-.Cardprofile-profile-picture {
+@media screen and (min-width: 800px) {
+    .Cardprofile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 65%;
+        padding-bottom: 15px;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+        color: var(--text-color);
+        font-size: 12px;
+    }
+
+    .id-card {
+        width: 30%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    
+    
+    .Cardprofile-picture {
+    margin-top: 90%;
     border-radius: 50%;
-    width: 40%;
-    height: 50%;
-    margin-bottom: 25px;
-    margin-top: 10px;
-    border:2px solid var(--main-color);
+    width: 180%;
+    height: 180%;
+
+}
 }
 
-.Cardprofile-profile-name {
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: --text-color;
-}
 
-.Cardprofile-profile-constellation {
-    padding-bottom: 15px;
-    font-weight: 600;
-}
 
-.Cardprofile-profile-full-description {
-    align-self: left;
-    padding: 15px;
-}
 
-.Cardprofile-profile-training {
-    padding-bottom: 5px;
-}
 
-.Cardprofile-profile-birth {
-    padding-bottom: 5px;
-}
 
-.Cardprofile-profile-description {
-    padding-bottom: 10px;
-}
