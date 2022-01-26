@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
 
-function Reels() {
-
-    const playLists = "https://www.youtube.com/watch?v=5S_7YJAFZTo";
+function Reels(props) {
 
   return (
   
     <div className="Reels">
         <ReactPlayer
-        url={playLists}
+        url={props.url}
         controls
         playing
         muted
