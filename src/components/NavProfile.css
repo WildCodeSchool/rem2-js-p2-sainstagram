@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 2px solid var(--gold-color);
-    border-bottom: 2px solid var(--gold-color);
+    border-top: 2px solid var(--strong-glue-border);
+    border-bottom: 2px solid var(--strong-glue-border);
     margin-top: 0;
     margin-bottom:0;
     position: sticky;
@@ -30,8 +30,8 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        border-top: 2px solid var(--gold-color);
-        border-bottom: 2px solid var(--gold-color);
+        border-top: 2px solid var(--strong-glue-border);
+        border-bottom: 2px solid var(--strong-glue-border);
         padding-top: 5px;
         margin-top: 0;
         margin-bottom: 0;

@@ -4,11 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 4px;
+    padding-top: 8px;
     position: sticky;
     bottom: 0;
     z-index: 100;
     background-color: white;
+    border-top: 2px solid white;
 }
 
 .foot-icon {
@@ -18,5 +19,5 @@
 .foot-icon-profile {
     height: 26px;
     border-radius: 50%;
-    border:2px solid var(--gold-color);
+    border:2px solid var(--strong-glue-border);
 }
