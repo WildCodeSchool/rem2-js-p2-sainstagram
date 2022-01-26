@@ -7,7 +7,6 @@
     border-top: 2px solid var(--gold-color);
     border-bottom: 2px solid var(--gold-color);
     margin-top: 0;
-    margin-bottom: 15px;
     position: sticky;
     top: 80px;
     z-index: 100;

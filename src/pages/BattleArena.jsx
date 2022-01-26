@@ -73,12 +73,12 @@ const BattleArena = () => {
         setTurn(+!turn); //switch between 0 and 1
     }
     return (
-        <div className='BattleArena'>
+        <div className="BattleArena">
             <NavProfile />
             <div className='Arena'>
                 <div className='players'>
-                    <Player {...player1} className={p1ClassName} />
-                    <Player {...player2} className={p2ClassName} />
+                    <Player {...player1} className={`PlayerCard ${p1ClassName}`} />
+                    <Player {...player2} className={`PlayerCard ${p2ClassName}`} />
                 </div>
                 <div className='pannel'>
                     <div className='log'>{log}</div>
