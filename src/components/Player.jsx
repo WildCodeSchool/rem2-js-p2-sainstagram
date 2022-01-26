@@ -7,7 +7,7 @@ const Player = (props) => {
     useEffect(() => {
         setHealth(props.health/props.life*100);
     }, [props.health, props.life]);
-    console.log(props);
+
     return (
         <div className={`Player ${props.className}`}>
             <img src={props.profilepic} alt="Portrait" id={`player${props.id}`}/>
