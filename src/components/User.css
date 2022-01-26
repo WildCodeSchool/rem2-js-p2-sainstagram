@@ -28,8 +28,8 @@
 
 @media screen and (min-width: 800px) {
     .User-profile-pic {
-        width:80px;
-        height:80px;
+        width:150px;
+        height:150px;
     }
     .User-profile-pic:hover {        
             animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
