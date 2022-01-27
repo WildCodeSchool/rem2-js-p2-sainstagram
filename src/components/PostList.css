@@ -10,7 +10,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: none;
-    width: 100%;
+    /*background: none;*/
+    /*width: 100%;*/
     padding-top: 35px;
+}
+
+.Post-list img.pub {
+    width: 25%;
 }
