@@ -86,7 +86,12 @@ const BattleArena = () => {
             <div className='Arena'>
                 <div className='players'>
                     <Player {...player1} className={`PlayerCard ${p1ClassName}`} />
-                    <div className="VS">Vs</div>
+                    <div className="VS">
+                        <div className="VS" className="titleArena">BATTLE ARENA</div>
+                        <div className="VS">{`${p1ClassName}`}</div>
+                        <div className="VS">Vs</div>
+                        <div className="VS">{`${p2ClassName}`}</div>
+                    </div>
                     <Player {...player2} className={`PlayerCard ${p2ClassName}`} />
                 </div>
                 <div className='pannel'>
