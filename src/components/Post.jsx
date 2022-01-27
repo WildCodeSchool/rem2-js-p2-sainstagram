@@ -30,8 +30,8 @@ const Post = ({post}) => {
                 <img className="post-img" src={post.picture} alt={post.name} />
             </div>
             {isFavorite ? 
-                    <div onClick={handleClickFavorite}> 
-                        
+                    <div className="like-container"> 
+                        <img src="https://i.ibb.co/5402THJ/saori-profilepic.jpg" alt="Saori Kido" className="icon-profile" />
                         <p className="microUserLike">Aimé par vous</p>
                     </div> : null}
             <p className='post-caption'><span className="who-posted">{post.name}</span>{" "}"{post.caption}"</p>
