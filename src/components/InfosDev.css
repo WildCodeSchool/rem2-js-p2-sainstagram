@@ -60,10 +60,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 .Dev-Name {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
 }
 .Github {
@@ -77,7 +77,7 @@
     margin-bottom: 5px;
 }
 .Dev-Username {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 10px;
 }
 }
