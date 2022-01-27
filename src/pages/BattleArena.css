@@ -22,7 +22,7 @@
 }
 
 .PlayerCard {
-    width: 40%;
+    width: 37%;
     height: 60%;
     color: var(--text-color);
     display: flex;
@@ -43,14 +43,14 @@
     text-align: center;
     font-family: 'Allan', cursive;
     color: white;
-    text-shadow: 2px 2px 5px rgba(33,33,33,0.64);
-    font-size: 22px;
+    text-shadow: 2px 2npm startpx 5px rgba(33,33,33,0.64);
+    font-size: 20px;
 }
 .titleArena {
     position: top;
     margin-bottom: 20px;
     font-family: 'Allan', cursive;
-    font-size: 26px;
+    font-size: 24px;
 }
 .pannel {
     display: flex;
