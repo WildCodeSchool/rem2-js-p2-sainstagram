@@ -15,10 +15,17 @@ function date2Human (date) {
 
 const Post = ({post}) => {
     const [isFavorite, setIsFavorite] = useState(false);
+    const[count, setCount] = useState(0);
 
 
     function handleClickFavorite(){
+        if (isFavorite){
         setIsFavorite(!isFavorite);
+        setCount(count-1);
+        } else if (!isFavorite) {
+            setIsFavorite(!isFavorite);
+        setCount(count+1);
+        }
     }
 
 
@@ -31,18 +38,33 @@ const Post = ({post}) => {
             <div className="img-container">
                 <img className="post-img" src={post.picture} alt={post.name} />
             </div>
-            {isFavorite ? 
+            {/* {isFavorite ? 
                     <div className="like-container"> 
                         <img src="https://i.ibb.co/5402THJ/saori-profilepic.jpg" alt="Saori Kido" className="icon-profile" />
-                        <p className="microUserLike">Aimé par vous</p>
-                    </div> : null}
+                        <p className="microUserLike">Aimé par <span>Vous</span></p>
+                    </div> :<div className="like-container"></div> }
             <p className='post-caption'><span className="who-posted">{post.name}</span>{" "}"{post.caption}"</p>
             <p className='post-date'>Publié le{" "}{date2Human(post.date)}</p>
             <div className='favorite-emoji'
                     onClick={handleClickFavorite}>
                         {isFavorite ? "❤️" : "🤍"}
                         
-            </div>
+            </div> */}
+                <div className="like-container">
+                    {isFavorite ? 
+                        <div className="like-check"> 
+                            <img src="https://i.ibb.co/5402THJ/saori-profilepic.jpg" alt="Saori Kido" className="icon-profile" />
+                            <p className="microUserLike">Aimé par <span>Vous</span></p>
+                        </div> :<div className="like-container"></div> }
+                    <div className='favorite-emoji'
+                    onClick={handleClickFavorite}>
+                        {isFavorite ? "❤️" : "🤍"} {count}
+                    </div>
+                </div>
+            <p className='post-caption'><span className="who-posted">{post.name}</span>{" "}"{post.caption}"</p>
+            <p className='post-date'>Publié le{" "}{date2Human(post.date)}</p>
+        
+
         </div>
     )
 }

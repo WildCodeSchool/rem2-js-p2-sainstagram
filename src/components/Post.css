@@ -59,36 +59,46 @@
     margin-left: 16px;
 }
 
-.favorite-emoji {
+.like-container {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    margin-top: -10px;
-    cursor: pointer;
-
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+.like-check{
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    margin-bottom: 5px;
 }
 
-.microUserLike {
-font-size: 10px;
-padding-left: 5px;
-
+.like-check span {
+    font-weight: bold;
+    font-size:10.5px;
 }
 
 .icon-profile {
     height: 15px;
     border-radius: 50%;
-    border:2px solid var(--gold-color);
+    border:2px solid var(--strong-glue-border);
     margin-left: 20px;
 }
 
-.like-container{
-    display: flex;
-    flex-direction: row;
-}
-
-.microUserLike{
+.microUserLike {
+    font-size: 10px;
+    padding-left: 5px;
     padding-top: 5px;
+    }
+
+.favorite-emoji {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    cursor: pointer;
+
 }
+    
+
 @media screen and (min-width: 800px) {
     .post-card {
         width: 450px;
