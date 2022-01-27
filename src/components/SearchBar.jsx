@@ -28,11 +28,16 @@ function SearchBar() {
     navigate(url);
   }
   const onChangeHandler = (text) => {
+    function isEqual(str1, str2){
+      let nbChar = str2.length;
+      return str1.slice(0,nbChar)
+                .localeCompare(str2, 'fr', {'sensitivity':"base"}) === 0
+    }
     let matches = []
     if (text.length > 0) {
       matches = users.filter(user => {
-        return user.name.toLowerCase().startsWith(text.toLowerCase()
-        )
+        // return user.name.toLowerCase().startsWith(text.toLowerCase())
+        return isEqual(user.name, text)
       })
     }
   
@@ -43,8 +48,8 @@ function SearchBar() {
 
   return (
     <div className="SearchBar">
-      <div className="searchbar-container"><h4>Chercher un chevalier</h4>
-      <input className="input" type="text"
+      <div className="searchbar-container"><h4>Cherchez un chevalier</h4>
+      <input autoFocus className="input" type="text"
         onChange={e => onChangeHandler(e.target.value)}
       /></div>
       {suggestions && suggestions.map((suggestion, i) =>
