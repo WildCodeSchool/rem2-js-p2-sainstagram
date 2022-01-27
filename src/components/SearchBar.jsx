@@ -31,7 +31,7 @@ function SearchBar() {
     function isEqual(str1, str2){
       let nbChar = str2.length;
       return str1.slice(0,nbChar)
-                 .localeCompare(str2, 'fr', {'sensitivity':"base"}) === 0
+                .localeCompare(str2, 'fr', {'sensitivity':"base"}) === 0
     }
     let matches = []
     if (text.length > 0) {
@@ -40,9 +40,11 @@ function SearchBar() {
         return isEqual(user.name, text)
       })
     }
+  
     setSuggestions(matches)
     setText(text)
   }
+
 
   return (
     <div className="SearchBar">

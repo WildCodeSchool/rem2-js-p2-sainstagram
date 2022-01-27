@@ -68,6 +68,7 @@ h4 {
         text-align: center;
         padding-top: 40px;
         background-color: grey;
+        position: sticky;
     }
 
     .input {
