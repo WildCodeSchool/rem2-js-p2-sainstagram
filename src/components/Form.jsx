@@ -15,7 +15,7 @@ function Form() {
           <form onSubmit={validation}>
             <ul>
               <li>
-                <label for="picture">url de l'image :</label>
+                <label for="picture">Url de l'image :</label>
               </li>
               <li>
                 <input
@@ -35,7 +35,9 @@ function Form() {
                 />
               </li>
               <input
-                type="submit">
+                type="submit"
+                value="Poster"
+                >
               </input>
             </ul>
           </form>

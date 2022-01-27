@@ -13,7 +13,8 @@ const Player = (props) => {
             <img className="playerpic" src={props.profilepic} alt="Portrait" id={`player${props.id}`}/>
             <p className="player-name">{props.name}</p>
             <div className='total-life'>
-                <div className='Life' style={{width:`${health}%`}}>{props.health<=0 ? "You loose" : ''}</div>
+                {props.health<=0 ? " Perdu !" : ''}
+                <div className='Life' style={{width:`${health}%`}}></div>
             </div>
         </div>
     )

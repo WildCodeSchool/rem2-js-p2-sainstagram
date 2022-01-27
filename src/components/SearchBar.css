@@ -1,5 +1,5 @@
 .SearchBar {
-    height: 80vh;
+    height: 84vh;
     text-align: center;
     padding-top: 40px;
     background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
@@ -63,12 +63,15 @@ h4 {
 
 @media screen and (min-width: 800px) {
     .SearchBar {
-        height: 82vh;
+        height: 86vh;
+        max-height: 84vh;
         width: 100%;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
         background-color: grey;
         position: sticky;
+        z-index: 100;
+        bottom: 2;
     }
 
     .input {
