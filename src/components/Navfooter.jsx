@@ -7,16 +7,8 @@ import search from '../assets/search.png';
 import send2 from '../assets/send2.png';
 import video from "../assets/video-icon.png";
 import './Navfooter.css';
-import PostList from './PostList';
 
 const Navfooter = () => {
-    const [isFavorite, setIsFavorite] = useState(false);
-    const [refreshHome, setRefreshHome] = useState();
-
-    function handleClickFavorite() {
-    setIsFavorite(true);
-    }
-    
     return (
         <div className='navfooter'>
             <NavLink to="/" className='navigation-link'>
@@ -29,7 +21,7 @@ const Navfooter = () => {
             <NavLink to="/reels" className='navigation-link'>
                 <img className='foot-icon' src={video} alt="video-button" />
             </NavLink>
-            <NavLink to="/" className='navigation-link'>
+            <NavLink to="/battle/9/5" className='navigation-link'>
                 <img className='foot-icon' src={send2} alt="send-button" />
             </NavLink>
             <NavLink to="/profil/6" className='navigation-link'>

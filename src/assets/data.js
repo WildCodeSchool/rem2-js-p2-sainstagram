@@ -1,6 +1,10 @@
-import { Buffer } from "buffer";
-const egg = "W3sibmFtZSI6ICJFbWVsaW5lIiwgImltZyI6ICIiLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJFc3RlbGxlIiwgImltZyI6ICIiLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJGbG9yZW50IiwgImltZyI6ICIvZ2FsZXJpZS9mbC5wbmciLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJHdWlsbGF1bWUgQyIsICJpbWciOiAiL2dhbGVyaWUvZ2MucG5nIiwgImxpZmUiOiAxMDAsICJoZWFsdGgiOiAxMDB9LCB7Im5hbWUiOiAiR3VpbGxhdW1lIE4iLCAiaW1nIjogIi9nYWxlcmllL2djLnBuZyIsICJsaWZlIjogMTAwLCAiaGVhbHRoIjogMTAwfSwgeyJuYW1lIjogIkl5c2hhIiwgImltZyI6ICIvZ2FsZXJpZS9pYi5wbmciLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJKdWxpZXR0ZSBNIiwgImltZyI6ICIiLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJKdWxpZXR0ZSBSIiwgImltZyI6ICIiLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJKXHUwMGU5clx1MDBlOW1pZSIsICJpbWciOiAiIiwgImxpZmUiOiAxMDAsICJoZWFsdGgiOiAxMDB9LCB7Im5hbWUiOiAiTWFyaW5lIiwgImltZyI6ICIvZ2FsZXJpZS9tZy5wbmciLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJNYXVkIiwgImltZyI6ICIiLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJNeWxcdTAwZThuZSIsICJpbWciOiAiIiwgImxpZmUiOiAxMDAsICJoZWFsdGgiOiAxMDB9LCB7Im5hbWUiOiAiTmljb2xhcyIsICJpbWciOiAiIiwgImxpZmUiOiAxMDAsICJoZWFsdGgiOiAxMDB9LCB7Im5hbWUiOiAiUm9tYWluIiwgImltZyI6ICIiLCAibGlmZSI6IDEwMCwgImhlYWx0aCI6IDEwMH0sIHsibmFtZSI6ICJTYWx3YSIsICJpbWciOiAiIiwgImxpZmUiOiAxMDAsICJoZWFsdGgiOiAxMDB9LCB7Im5hbWUiOiAiU2FtaXIiLCAiaW1nIjogIi9nYWxlcmllL3NyLnBuZyIsICJsaWZlIjogMTAwLCAiaGVhbHRoIjogMTAwfSwgeyJuYW1lIjogIlN0ZXBoZW4iLCAiaW1nIjogIiIsICJsaWZlIjogMTAwLCAiaGVhbHRoIjogMTAwfSwgeyJuYW1lIjogIlN5bHZhaW4iLCAiaW1nIjogIiIsICJsaWZlIjogMTAwLCAiaGVhbHRoIjogMTAwfSwgeyJuYW1lIjogIllhY2luZSIsICJpbWciOiAiIiwgImxpZmUiOiAxMDAsICJoZWFsdGgiOiAxMDB9XQ==";
-let data = Buffer.from(egg, 'base64').toString();
-data = JSON.parse(data);
-
+const data = {
+    5: {"id": 5, "name":"Iysha", "profilepic":"/images/ib.png",
+        "abilities": ["Babe de la mort qui tue","WTF","Fuck my Mind",
+        "Cocktail Porn Star"]},
+    9: {"id": 9, "name":"Marine","profilepic":"/images/mg.png",
+        "abilities": ["Jeux de mots de la mort","Dans ta face","Montage photo",
+        "Coup de seins"]}
+};
+            
 export default data;
