@@ -40,13 +40,13 @@ const Infos = () => {
                 <h1 className="pageTitle">Notre équipe de développeurs</h1>
                 <div className='InfosList'>
                 {contactInfo.map((contact, index) => (
-                   <InfosDev
+                    <InfosDev
                     key={index}
                     name={contact.name}
                     githubuser={contact.githubuser}
                     link={contact.link}
                     linkedin={contact.linkedin}
-                   />
+                  />
                 ))} 
                 </div>
         </div>
