@@ -39,16 +39,15 @@
 }
 
 .empty-like-header {
-    width: 75%;
-    margin-left: 8px;
+    width: 73%;
+    margin-left: 9px;
     object-fit: contain;
     object-position: 100% 50%;
 }
 
-.button-icon {
-    height: 55%;
-    width: 50px;
-    margin-left: 6px;
+.info-icon {
+    height: 41%;
+    width: 41px;
     object-fit: contain;
     object-position: 100% 50%;
     border: none;
