@@ -5,9 +5,9 @@ import './Infos.css'
 const contactInfo = [
     {
       name: 'Guillaume',
-      githubuser: 'GuillaumeN',
-      link: null,
-      linkedin: 'https://www.linkedin.com/in/guillaume-nivesse-a0924a61/',
+      githubuser: 'gunpici',
+      link: 'https://github.com/gunpici',
+      linkedin: 'www.linkedin.com/in/guillaume-nivesse-Dev-Web',
     },
     {
       name: 'Mylène',
