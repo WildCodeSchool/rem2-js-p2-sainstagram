@@ -31,19 +31,22 @@ function SearchBar() {
     let matches = []
     if (text.length > 0) {
       matches = users.filter(user => {
-        return user.name.toLowerCase().startsWith(text.toLowerCase())
+        return user.name.toLowerCase().startsWith(text.toLowerCase()
+        )
       })
     }
+  
     setSuggestions(matches)
     setText(text)
   }
 
+
   return (
     <div className="SearchBar">
+      <div className="searchbar-container"><h4>Chercher un chevalier</h4>
       <input className="input" type="text"
         onChange={e => onChangeHandler(e.target.value)}
-        value={text}
-      />
+      /></div>
       {suggestions && suggestions.map((suggestion, i) =>
         <div key={i} className="suggestion" onClick={() => onSuggestionHandler(suggestion.name)}>
           <ul className="suggestion-list">

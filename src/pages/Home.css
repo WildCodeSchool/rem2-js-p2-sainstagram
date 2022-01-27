@@ -1,4 +1,13 @@
 .home {
-    background-image: linear-gradient(to right, #fcf6ba 0%, #bf953f  82%);
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
     background-attachment: fixed;
 }
+
+@media screen and (min-width: 800px) {
+    .home {
+        background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    }
+}   
+
+
+
