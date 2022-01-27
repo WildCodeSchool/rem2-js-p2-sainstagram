@@ -5,6 +5,7 @@ import './PostList.css'
 
 const PostList = (props) => {
     const [postList, setPostList] = useState([]);
+
     useEffect(() => {
         if (props.id) {
             Axios
@@ -19,22 +20,22 @@ const PostList = (props) => {
         }
     }, [])
 
-    function getPostList(){
-        let list = postList.sort(function (a, b) { return b.date.localeCompare(a.date); });
+    function getPostList() {
+        let list = [...postList].sort(function (a, b) { return b.date.localeCompare(a.date); });
 
-        let post = {"userid":0, "name":"HP Eats", "picture":"/images/pub.gif", "caption": "Venez découvrir notre nouvelle offre",
-        "date":"20220128"};
+        let post = {
+            "userid": 0, "name": "HP Eats", "picture": "/images/pub.gif", "caption": "Venez découvrir notre nouvelle offre",
+            "date": "20220128"
+        };
 
-        console.log(`length:${list.length}`)
-        if (list.length===0){
-            console.log('return')
+        if (list.length === 0 ) {
             return list;
-        } else if (list.length<=3) {
-            console.log('push')
-            list.push(post);
-        }else{
-            console.log('splice')
-            list.splice(3, 0, post);
+        } else {
+            if (list.length <= 3) {
+                list.push(post);
+            } else {
+                list.splice(3, 0, post);
+            }
         }
         return list;
     }
