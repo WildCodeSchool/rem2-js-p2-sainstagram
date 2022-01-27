@@ -19,6 +19,10 @@
     --light-color-dark-mode:#c0c0c0;
     --mid-color-dark-mode: #6E6E6E;
     --text-dark-mode: #ededed;
+    /*bordures mauves*/
+    --strong-glue-border: #A27DDE;
+    --wedding-song-border: #E7A8FB;
+    --rejected-visa-border: #736BFF;
 }
 
 a {

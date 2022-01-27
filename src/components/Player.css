@@ -1,6 +1,13 @@
 .Player {
-    border: 1 solid black;
     margin: 10px;
+}
+.Player img {
+  height: 150px;
+  width: 120px;
+  border-radius: 2%;
+}
+.player-name {
+  margin: 5px;
 }
 .total-life {
     background-color: red;
@@ -11,11 +18,6 @@
     background-color: lime;
     height: 30px;
 }
-.Player img {
-    height: 150px;
-    width: 100px;
-}
-
 .hit {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -43,8 +45,14 @@
 
 @media screen and (min-width: 800px) {
   .Player {
-    border: 1 solid black;
     margin: 10px;
+}
+.Player img {
+  height: 250px;
+  width: 200px;
+}
+.player-name {
+  margin: 10px;
 }
 .total-life {
     background-color: red;
@@ -55,11 +63,6 @@
     background-color: lime;
     height: 30px;
 }
-.Player img {
-    height: 250px;
-    width: 200px;
-}
-
 .hit {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);

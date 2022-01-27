@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
 
-function Reels(props) {
+function Video() {
 
   return (
-  
     <div className="Reels">
         <ReactPlayer
-        url={props.url}
+        url="https://youtu.be/WhMEBGkh6Yg?list=PL9Fy3wAhUA7L_ugUYjAbxwFm7OORqFdHs"
         controls
         playing
         muted
@@ -18,4 +17,4 @@ function Reels(props) {
   )
 }
 
-export default Reels;
+export default Video;
