@@ -22,7 +22,7 @@
 }
 
 .PlayerCard {
-    width: 40%;
+    width: 37%;
     height: 60%;
     color: var(--text-color);
     display: flex;
@@ -44,13 +44,13 @@
     font-family: 'Allan', cursive;
     color: white;
     text-shadow: 2px 2px 5px rgba(33,33,33,0.64);
-    font-size: 22px;
+    font-size: 20px;
 }
 .titleArena {
     position: top;
     margin-bottom: 20px;
     font-family: 'Allan', cursive;
-    font-size: 26px;
+    font-size: 24px;
 }
 .pannel {
     display: flex;
@@ -132,6 +132,8 @@ div.log {
         border-radius: 5px;
         text-align: center;
         line-height: 50px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 22px;
     }
     .Arena button {
         height:20px; 
