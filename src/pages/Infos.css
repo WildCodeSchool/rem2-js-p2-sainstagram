@@ -1,26 +1,22 @@
 .Infos {
-    height: 85vh;
-    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
     z-index: 1;
 }
 .pageTitle {
-    font-size: 12px;
-    text-align: center;
-    padding-bottom: 10px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .InfosList {
-    /*height: 74vh;*/
+    height:80vh;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
     text-align: center;
 }
 @media screen and (min-width: 800px) {
