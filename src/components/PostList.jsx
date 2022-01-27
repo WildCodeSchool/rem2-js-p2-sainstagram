@@ -19,10 +19,29 @@ const PostList = (props) => {
         }
     }, [])
 
+    function getPostList(){
+        let list = postList.sort(function (a, b) { return b.date.localeCompare(a.date); });
+
+        let post = {"userid":0, "name":"HP Eats", "picture":"/images/pub.gif", "caption": "Venez découvrir notre nouvelle offre",
+        "date":"20220128"};
+
+        console.log(`length:${list.length}`)
+        if (list.length===0){
+            console.log('return')
+            return list;
+        } else if (list.length<=3) {
+            console.log('push')
+            list.push(post);
+        }else{
+            console.log('splice')
+            list.splice(3, 0, post);
+        }
+        return list;
+    }
+
     return (
         <div className='Post-list'>
-            {postList && postList
-                .sort(function (a, b) { return b.date.localeCompare(a.date); })
+            {getPostList()
                 .map((post, index) => (
                     <div className='Postlist-post' key={index}>
                         <Post post={post} />
