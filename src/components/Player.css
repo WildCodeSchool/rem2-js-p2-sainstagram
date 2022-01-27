@@ -1,11 +1,11 @@
-
 .Player img {
   height: 150px;
   width: 120px;
   border-radius: 2%;
 }
 .player-name {
-  margin: 5px;
+  font-family: 'Allan', cursive;
+  font-size: 20px;
 }
 .total-life {
     background-color: red;
