@@ -37,7 +37,7 @@ const contactInfo = [
 const Infos = () => {
     return (
         <div className='Infos'>              
-                <h1 className="pageTitle">Notre équipe de développement</h1>
+                <h1 className="pageTitle">Notre équipe de développeurs</h1>
                 <div className='InfosList'>
                 {contactInfo.map((contact, index) => (
                    <InfosDev

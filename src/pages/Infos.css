@@ -8,7 +8,7 @@
     background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
     padding-top: 20px;
 }
-h1 {
+.pageTitle {
     margin-top: 30px;
 }
 .InfosList {
@@ -23,7 +23,7 @@ h1 {
 }
 @media screen and (min-width: 800px) {
 .Infos {
-    height: 80vh;
+    height: 82vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,17 +32,18 @@ h1 {
     padding-top: 40px;
     background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
 }
-h1 {
+.pageTitle {
     margin-top: 20px;
+    font-size: 22px;
 }
 .InfosList {
-    height: 40vh;
+    height: 43vh;
     width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 }
