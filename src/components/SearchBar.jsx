@@ -51,6 +51,7 @@ function SearchBar() {
       <div className="searchbar-container"><h4>Cherchez un chevalier</h4>
       <input autoFocus className="input" type="text"
         onChange={e => onChangeHandler(e.target.value)}
+        value={text}
       /></div>
       {suggestions && suggestions.map((suggestion, i) =>
         <div key={i} className="suggestion" onClick={() => onSuggestionHandler(suggestion.name)}>
