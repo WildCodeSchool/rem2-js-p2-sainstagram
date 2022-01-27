@@ -43,7 +43,7 @@
     text-align: center;
     font-family: 'Allan', cursive;
     color: white;
-    text-shadow: 2px 2npm startpx 5px rgba(33,33,33,0.64);
+    text-shadow: 2px 2px 5px rgba(33,33,33,0.64);
     font-size: 20px;
 }
 .titleArena {
@@ -132,6 +132,8 @@ div.log {
         border-radius: 5px;
         text-align: center;
         line-height: 50px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 22px;
     }
     .Arena button {
         height:20px; 
