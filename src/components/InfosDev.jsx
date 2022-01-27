@@ -10,9 +10,9 @@ const InfosDev = props => {
     <div className="InfosDev">
         <h3 className="Dev-Name">{props.name}</h3>
         <div className="contact">
-            {props.link !== null ? <div><Link className="dev-git" to={props.link}><img className="Github"src={github}></img><p className="Dev-Username">{props.githubuser}</p>
-            <p className="Dev-Github">{props.link}</p></Link></div> : null}
-            {props.linkedin !== null ? <div><Link className="dev-linkedin" to={props.linkedin}><img className="Linkedin"src={linkedin}></img><p className="Dev-Linkedin">{props.linkedin}</p></Link></div> : null}
+            {props.link !== null ? <div><a className="dev-git" href={props.link}><img className="Github"src={github}></img><p className="Dev-Username">{props.githubuser}</p>
+            <p className="Dev-Github">{props.link}</p></a></div> : null}
+            {props.linkedin !== null ? <div><a className="dev-linkedin" href={props.linkedin}><img className="Linkedin"src={linkedin}></img><p className="Dev-Linkedin">{props.linkedin}</p></a></div> : null}
         </div>    
     </div>
   );
