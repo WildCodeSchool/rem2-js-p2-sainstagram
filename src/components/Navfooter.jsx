@@ -24,9 +24,9 @@ const Navfooter = () => {
             <NavLink to="/battle/9/5" className='navigation-link'>
                 <img className='foot-icon' src={send2} alt="send-button" />
             </NavLink>
-            <NavLink to="/profil/6" className='navigation-link'>
+            <a href="/profil/6">
                 <img src="https://i.ibb.co/5402THJ/saori-profilepic.jpg" alt="Saori Kido" className="foot-icon-profile" />
-            </NavLink>
+            </a>
         </div>
     )
 }
