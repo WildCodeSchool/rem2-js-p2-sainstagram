@@ -1,12 +1,58 @@
+/*
+
+*/
+
+.Player {
+    background-color: transparent;
+    width: 220px;
+    height: 300px;
+    border: 1px solid #eeeeee;
+    perspective: 1000px;
+}
+
+.Player .box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.box-front,
+.box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.box-front {
+    background-color: #cccccc;
+    color: #111111;
+}
+
+.box-back {
+    background-color: #ffbf42;
+    color: #eeeeee;
+    transform: rotateY(180deg);
+}
+
+.Player.dead .box-inner {
+    transform: rotateY(180deg);
+}
+
 .Player img {
-  height: 150px;
-  width: 120px;
-  border-radius: 2%;
+    height: 150px;
+    width: 120px;
+    border-radius: 2%;
 }
+
 .player-name {
-  font-family: 'Allan', cursive;
-  font-size: 20px;
+    font-family: 'Allan', cursive;
+    font-size: 20px;
 }
+
 .total-life {
     color: white;
     background-color: red;
@@ -15,80 +61,64 @@
     width: 100%;
     height: 30px;
 }
+
 .Life {
     background-color: lime;
     height: 30px;
     max-width: 100%;
 }
+
 .hit {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
 }
-  
+
 @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
     }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
     }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
     }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
     }
 }
 
 @media screen and (min-width: 800px) {
-  .Player {
-    margin: 10px;
-}
-.Player img {
-  height: 250px;
-  width: 200px;
-}
-.player-name {
-  margin: 10px;
-}
-.total-life {
-    background-color: red;
-    width: 200px;
-    height: 30px;
-}
-.Life {
-    background-color: lime;
-    height: 30px;
-    width: 200px;
-}
-.hit {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-}
-  
-@keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+    .Player {
+        margin: 10px;
+        perspective: 1000px;
     }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
+    .Player img {
+        height: 250px;
+        width: 200px;
     }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
+    .player-name {
+        margin: 10px;
     }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
+    .total-life {
+        width: 200px;
+        height: 30px;
     }
-}
-
+    .Life {
+        height: 30px;
+        width: 200px;
+    }
+    .hit {
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
 }
