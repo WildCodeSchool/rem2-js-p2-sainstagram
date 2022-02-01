@@ -29,9 +29,7 @@ const PostList = (props) => {
             "date": "20220128"
         };
 
-        if (list.length === 0 ) {
-            return list;
-        } else {
+        if (list.length !== 0 ) {
             if (list.length <= 3) {
                 list.push(post);
             } else {
