@@ -10,11 +10,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background: none;*/
-    /*width: 100%;*/
     padding-top: 35px;
 }
 
 .Post-list img.pub {
     width: 25%;
+}
+
+div.Bronze {
+    background-color: #f5d3c8;
+    background-image: linear-gradient(to right, #f5d3c8 0%, #c08552 74%);
+    background-position: fixed;
+}
+
+div.Or {
+    background-image: linear-gradient(to right, #fcf6ba 0%, #bf953f  74%);
+    background-position: fixed;
+}
+
+div.Argent {
+    background-color: #f1f2f6;
+    background-image: linear-gradient(to right, #f1f2f6 0%, #c9c6c6 74%);
+    background-position: fixed;
+}
+
+div.Saori {
+    background-color: #d8dede;
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    background-position: fixed;
 }
