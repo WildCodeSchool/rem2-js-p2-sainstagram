@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import Post from './Post';
-import './PostList.css'
+import './PostList.css';
+import getClassName from '../tools/getClassName'
 
 const PostList = (props) => {
     const [postList, setPostList] = useState([]);
+
     useEffect(() => {
         if (props.id) {
             Axios
@@ -19,10 +21,27 @@ const PostList = (props) => {
         }
     }, [])
 
+    function getPostList() {
+        let list = [...postList].sort(function (a, b) { return b.date.localeCompare(a.date); });
+
+        let post = {
+            "userid": 0, "name": "HP Eats", "picture": "/images/pub.gif", "caption": "Venez découvrir notre nouvelle offre",
+            "date": "20220128"
+        };
+
+        if (list.length !== 0 ) {
+            if (list.length <= 3) {
+                list.push(post);
+            } else {
+                list.splice(3, 0, post);
+            }
+        }
+        return list;
+    }
+
     return (
-        <div className='Post-list'>
-            {postList && postList
-                .sort(function (a, b) { return b.date.localeCompare(a.date); })
+        <div className={`${props.className} Post-list`}>
+            {getPostList()
                 .map((post, index) => (
                     <div className='Postlist-post' key={index}>
                         <Post post={post} />

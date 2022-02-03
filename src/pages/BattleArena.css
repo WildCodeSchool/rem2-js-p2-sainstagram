@@ -1,20 +1,126 @@
 .BattleArena {
-    background-color: var(--dark-main-color);
-}
-.BattleArena button {
-    height:20px; 
-    width:100px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-    left:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .Arena {
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    height: 77vh;  
+    margin-top: 0px; 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    background-color: burlywood;
+    z-index: 1;
 }
+
+.players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+
+.PlayerCard {
+    width: 37%;
+    height: 60%;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(255,255,255, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
+}
+
+.VS {
+    text-align: center;
+    font-family: 'Allan', cursive;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(33,33,33,0.64);
+    font-size: 36pt;
+}
+.titleArena {
+    /*position: top;*/
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.pannel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+}
+
+.Arena button {
+    height:20px; 
+    width:100px; 
+    margin-top: 10px;
+}
+
 div.log {
     background-color: white;
-    width: 200px;
+    height: 100px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
 }
+
+@media screen and (min-width: 800px) {
+    .BattleArena {
+        height: 99%;
+    }
+    .Arena {
+        height: 69vh;  
+    }
+    .players {
+        justify-content: space-evenly;
+        height: 60%;
+    }
+    .PlayerCard {
+        width: 20%;
+        height: 100%;
+        margin-bottom: 10px;
+        background-color: rgba(255,255,255, 0.7);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+        box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
+    }
+    .VS {
+        font-size: 84pt;
+    }
+    .titleArena {
+        position: top;
+        margin-bottom: 30px;
+        font-family: 'Allan', cursive;
+        font-size: 40px;
+    }
+    .pannel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+    }
+    div.log {
+        width: 500px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 50px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 22px;
+    }
+    .Arena button {
+        height:20px; 
+        width:100px; 
+        margin-top: 10px;
+    }
+}    

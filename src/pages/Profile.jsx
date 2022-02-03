@@ -1,10 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import Axios from "axios";
+import Axios from "axios"
 import "./Profile.css"
 import CardProfile from '../components/CardProfile'
 import PostList from '../components/PostList'
 import { useEffect, useState } from 'react'
+import getClassName from '../tools/getClassName'
 
 const Profile = () => {
     const params = useParams();
@@ -17,18 +18,12 @@ const Profile = () => {
             setInfoProfile(response.data[0])});
     }, [params.id])
 
-    function getCategory () {
-        if (infoProfile.category){
-            return infoProfile.category.split("'").pop().split(" ").pop()
-        } else {
-            return "";
-        }
-    }
+    
 
     return (
-        <div className={`Profile ${getCategory()}`}>  
-            <CardProfile infoProfile={infoProfile} />
-            <PostList className="PostList-profile" id={parseInt(params.id)}/>
+        <div className="Profile">  
+            <CardProfile className={`${getClassName(infoProfile.category)}`} infoProfile={infoProfile} />
+            <PostList className={`${getClassName(infoProfile.category)} PostList-profile`} id={parseInt(params.id)}/>
         </div>
     )
 }

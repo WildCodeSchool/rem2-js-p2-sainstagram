@@ -3,17 +3,30 @@ import './Player.css';
 
 const Player = (props) => {
     const [health, setHealth] = useState(100);
-    
+
     useEffect(() => {
-        setHealth(props.health/props.life*100);
+        setHealth(props.health / props.life * 100);
     }, [props.health, props.life]);
-    console.log(props);
+
     return (
-        <div className={`Player ${props.className}`}>
-            <img src={props.profilepic} alt="Portrait" id={`player${props.id}`}/>
-            <p>Name: {props.name}</p>
-            <div className='total-life'>
-                <div className='Life' style={{width:`${health}%`}}>{props.health<=0 ? "You loose" : ''}</div>
+        <div className={`Player ${props.className} ${props.health<=0 ? 'dead':''}`}>
+            <div className='box-inner'>
+                <div className='box-front'>
+                    <img className="playerpic" src={props.profilepic} alt="Portrait" id={`player${props.id}`} />
+                    <p className="player-name">{props.name}</p>
+                    <div className='total-life'>
+                        {props.health <= 0 ? " Perdu !" : ''}
+                        <div className='Life' style={{ width: `${health}%` }}></div>
+                    </div>
+                </div>
+                <div className='box-back'>
+                    <img className="playerpic" src={props.profilepic} alt="Portrait" id={`player${props.id}`} />
+                    <p className="player-name">{props.name}</p>
+                    <div className='total-life'>
+                        {props.health <= 0 ? " Perdu !" : ''}
+                        <div className='Life' style={{ width: `${health}%` }}></div>
+                    </div>
+                </div>
             </div>
         </div>
     )

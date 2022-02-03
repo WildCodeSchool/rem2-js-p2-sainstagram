@@ -3,16 +3,17 @@
     top: 0;
     z-index: 101;
     background-color: white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    height: 10vh;
+    height: 80px;
     display: flex;
+    justify-content: space-between;
 }
-
+.logo-container {
+    max-width: 50%; 
+}
 .Header-logo {
-    height: 60%;
-    margin-top: 20px;
-    padding-left: 10px;
+    height: 70%;
+    margin-top: 13px;
+    padding-left: 5px;
 }
 
 .icons {
@@ -22,7 +23,7 @@
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    margin-right: 10px;
+    padding-right: 5px;
     object-position: 50% 50%;
 }
 
@@ -38,16 +39,15 @@
 }
 
 .empty-like-header {
-    width: 75%;
-    margin-left: 8px;
+    width: 73%;
+    margin-left: 9px;
     object-fit: contain;
     object-position: 100% 50%;
 }
 
-.button-icon {
-    height: 55%;
-    width: 50px;
-    margin-left: 6px;
+.info-icon {
+    height: 41%;
+    width: 41px;
     object-fit: contain;
     object-position: 100% 50%;
     border: none;
@@ -60,6 +60,20 @@
     object-fit: contain;
     object-position: 100% 48%;
     align-self: left;
+    cursor: pointer;
 }
 
+
+@media screen and (min-width: 800px) {
+    .icons-container {
+        max-width: 40px;
+        position: right;
+    }
+
+    .icons {
+        max-width: 50%;
+        display: flex;
+        flex-direction: row;
+    }       
+}    
 
