@@ -13,7 +13,7 @@ const contactInfo = [
       name: 'Mylène',
       githubuser: 'MyleneVinci',
       link: 'https://github.com/MyleneVinci',
-      linkedin: 'https://www.linkedin.com/in/myl%C3%A8ne-vinci-897ab3166/',
+      linkedin: 'https://www.linkedin.com/in/mylene-vinci/',
     },
     {
       name: 'Stephen',
