@@ -13,7 +13,7 @@ const Profile = () => {
 
     useEffect(() => {
         Axios
-        .get(`https://a.nacapi.com/sainstgram.users?id=${params.id}`)
+        .get(`https://api.jsonbin.io/b/6218fbd625fb1b26b188e317?id=${params.id}`)
         .then((response) => {
             setInfoProfile(response.data[0])});
     }, [params.id])
