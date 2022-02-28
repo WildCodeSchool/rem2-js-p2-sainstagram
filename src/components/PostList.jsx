@@ -10,7 +10,7 @@ const PostList = (props) => {
     useEffect(() => {
         if (props.id) {
             Axios
-                .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82?userid=${props.id}`)
+                .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82/?userid=${props.id}`)
                 .then((response) => setPostList(response.data))
                 .catch(error => console.log(`API (posts) call error: ${error}`))
         } else {
