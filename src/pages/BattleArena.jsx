@@ -84,12 +84,10 @@ const BattleArena = () => {
         <div className="BattleArena">
             <NavProfile />
             <div className='Arena'>
+            <div className="VS titleArena">BATTLE ARENA</div>
                 <div className='players'>
                     <Player {...player1} className={`PlayerCard ${p1ClassName}`} />
-                    <div className="VS">
-                        <div className="VS titleArena">BATTLE ARENA</div>
-                        <div className="VS">Vs</div>
-                    </div>
+                    <div className="VS">Vs</div>
                     <Player {...player2} className={`PlayerCard ${p2ClassName}`} />
                 </div>
                 <div className='pannel'>

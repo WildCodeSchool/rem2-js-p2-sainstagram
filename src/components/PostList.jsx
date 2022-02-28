@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import Post from './Post';
-import './PostList.css'
+import './PostList.css';
+import getClassName from '../tools/getClassName'
 
 const PostList = (props) => {
     const [postList, setPostList] = useState([]);
@@ -28,9 +29,7 @@ const PostList = (props) => {
             "date": "20220128"
         };
 
-        if (list.length === 0 ) {
-            return list;
-        } else {
+        if (list.length !== 0 ) {
             if (list.length <= 3) {
                 list.push(post);
             } else {
@@ -41,7 +40,7 @@ const PostList = (props) => {
     }
 
     return (
-        <div className='Post-list'>
+        <div className={`${props.className} Post-list`}>
             {getPostList()
                 .map((post, index) => (
                     <div className='Postlist-post' key={index}>

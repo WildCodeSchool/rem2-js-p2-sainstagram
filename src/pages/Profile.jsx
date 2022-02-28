@@ -5,6 +5,7 @@ import "./Profile.css"
 import CardProfile from '../components/CardProfile'
 import PostList from '../components/PostList'
 import { useEffect, useState } from 'react'
+import getClassName from '../tools/getClassName'
 
 const Profile = () => {
     const params = useParams();
@@ -17,20 +18,12 @@ const Profile = () => {
             setInfoProfile(response.data[0])});
     }, [params.id])
 
-    function getClassName() {
-        if (infoProfile.category){
-            if (infoProfile.category !== "Déesse"){
-                return infoProfile.category.split("'").pop().split(" ").pop();
-            } else {
-              return "Saori"; 
-            }
-        }
-    }
+    
 
     return (
-        <div className={`Profile ${getClassName()}`}>  
-            <CardProfile infoProfile={infoProfile} />
-            <PostList className="PostList-profile" id={parseInt(params.id)}/>
+        <div className="Profile">  
+            <CardProfile className={`${getClassName(infoProfile.category)}`} infoProfile={infoProfile} />
+            <PostList className={`${getClassName(infoProfile.category)} PostList-profile`} id={parseInt(params.id)}/>
         </div>
     )
 }
