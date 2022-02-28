@@ -10,12 +10,12 @@ const PostList = (props) => {
     useEffect(() => {
         if (props.id) {
             Axios
-                .get(`https://a.nacapi.com/sainstgram.posts?userid=${props.id}`)
+                .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82/?userid=${props.id}`)
                 .then((response) => setPostList(response.data))
                 .catch(error => console.log(`API (posts) call error: ${error}`))
         } else {
             Axios
-                .get("https://a.nacapi.com/sainstgram.posts")
+                .get("https://api.jsonbin.io/b/621a0012c4790b3406241a82")
                 .then((response) => setPostList(response.data))
                 .catch(error => console.log(`API (posts) call error: ${error}`))
         }
