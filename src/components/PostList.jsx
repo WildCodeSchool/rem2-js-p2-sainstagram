@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import Post from './Post';
 import './PostList.css';
-import getClassName from '../tools/getClassName'
 
 const PostList = (props) => {
     const [postList, setPostList] = useState([]);
 
     useEffect(() => {
         if (props.id) {
+            // Axios
+            //     .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82/?userid=${props.id}`)
+            // Change this due to API switch
             Axios
-                .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82/?userid=${props.id}`)
-                .then((response) => setPostList(response.data))
+                .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82`)
+                .then(response => setPostList(response.data.filter(item => item.userid === parseInt(props.id))))
                 .catch(error => console.log(`API (posts) call error: ${error}`))
         } else {
             Axios
