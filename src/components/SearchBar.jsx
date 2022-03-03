@@ -10,7 +10,7 @@ function SearchBar() {
 
   useEffect(() => {
     
-    const url = "https://api.jsonbin.io/b/6218fbd625fb1b26b188e317/1";
+    const url = "https://api.jsonbin.io/b/6218fbd625fb1b26b188e317/3";
     Axios
       .get(url)
       .then((response) => setUsers(response.data))

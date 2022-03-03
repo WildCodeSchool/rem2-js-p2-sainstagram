@@ -1,4 +1,4 @@
-const users = [
+[
   {
     "id": 1,
     "name": "Seiya",
@@ -254,7 +254,7 @@ const users = [
     "category": "Chevalier d'Argent",
     "constellation": "du Serpentaire",
     "trainingplace": "Sanctuaire, Grèce",
-    "profilepic": "https://i.ibb.co/256gvbP/shina-profilepic.jpg",
+    "profilepic": "https://i.ibb.co/0Q9cPrj/shina-profilepic-Convert-Image.jpg",
     "description": "Tempérament de feu :flame",
     "abilities": [
       "Le soleil noir"
@@ -672,8 +672,7 @@ const users = [
     "abilities": [
       "Crystal Wall",
       "Stardust Revolution",
-      "Starlight exctinction"
+      "Starlight extinction"
     ]
   }
 ]
-export default users;
