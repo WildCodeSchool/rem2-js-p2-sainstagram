@@ -17,12 +17,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 65%;
+    height: 60%;
 }
 
 .PlayerCard {
     width: 40%;
-    height: 100%;
+    height: 90%;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -30,6 +30,7 @@
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 60px;
     background-color: rgba(255,255,255, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -44,9 +45,14 @@
     justify-content: flex-start;
 }
 
-.titleArena {
-    margin-top: 20px;
-    font-size: 30px;
+.VStitleArena {
+    text-align: center;
+    font-family: 'Allan', cursive;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(33,33,33,0.64);
+    margin-top: 40px;
+    margin-bottom: 100px;
+    font-size: 28px;
 }
 
 .VS {
@@ -54,7 +60,7 @@
     font-family: 'Allan', cursive;
     color: white;
     text-shadow: 2px 2px 5px rgba(33,33,33,0.64);
-    font-size: 84pt;
+    font-size: 48px;
 }
 
 .pannel {
@@ -83,9 +89,11 @@ div.log {
 @media screen and (min-width: 800px) {
     .BattleArena {
         height: 99%;
+        width: 100%;
     }
     .Arena {
         height: 69vh;  
+        padding-top: 20px;
     }
     .players {
         justify-content: space-evenly;
@@ -94,7 +102,6 @@ div.log {
     .PlayerCard {
         width: 20%;
         height: 90%;
-        margin-bottom: 10px;
         background-color: rgba(255,255,255, 0.7);
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 5px;
