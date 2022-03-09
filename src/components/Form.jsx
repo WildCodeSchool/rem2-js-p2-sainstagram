@@ -8,7 +8,7 @@ function Form() {
   const navigate = useNavigate();
 
   function Validation(event) {
-    let url = 'https://a.nacapi.com/sainstgram.posts'
+    let url = 'https://api.jsonbin.io/b/621a0012c4790b3406241a82/5'
     let today = new Date().toISOString().split('T')[0].split('-').join(''); // YYYYMMDD format
     const newPost = {
       "userid": 6, "date": today, "picture": event.target.picture.value,

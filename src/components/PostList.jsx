@@ -12,12 +12,12 @@ const PostList = (props) => {
             //     .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82/?userid=${props.id}`)
             // Change this due to API switch
             Axios
-                .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82`)
+                .get(`https://api.jsonbin.io/b/621a0012c4790b3406241a82/5`)
                 .then(response => setPostList(response.data.filter(item => item.userid === parseInt(props.id))))
                 .catch(error => console.log(`API (posts) call error: ${error}`))
         } else {
             Axios
-                .get("https://api.jsonbin.io/b/621a0012c4790b3406241a82")
+                .get("https://api.jsonbin.io/b/621a0012c4790b3406241a82/3")
                 .then((response) => setPostList(response.data))
                 .catch(error => console.log(`API (posts) call error: ${error}`))
         }

@@ -18,7 +18,7 @@
 
 .User {
     height: 100%;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 5px;
 }
 
@@ -28,8 +28,8 @@
 
 @media screen and (min-width: 800px) {
     .User { 
-        height: 110px;
-        width: 110px;
+        height: 70px;
+        width: 70px;
 
     }
     .User-profile-pic {
@@ -62,7 +62,7 @@
           }
     
     .User-profile-name {
-        font-size: 15px;
+        font-size: 10px;
         text-align: center;
         color: black;
         font-weight: 500;

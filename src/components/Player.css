@@ -1,7 +1,7 @@
 .Player {
     background-color: white;
-    width: 220px;
-    height: 280px;
+    width: 250px;
+    height: 265px;
     border: 1px solid #eeeeee;
     perspective: 1000px;
 }
@@ -39,16 +39,17 @@
 }
 
 .Player img {
-    height: 70%;
-    width: 80%;
+    height: 65%;
+    width: 85%;
     border-radius: 2%;
-    margin: 10px;
+    margin: 8px;
     margin-top: 12px;
 }
 
 .player-name {
+    height: 50px;
     font-family: 'Allan', cursive;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .total-life {
