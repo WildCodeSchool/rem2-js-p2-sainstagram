@@ -10,7 +10,7 @@ function SearchBar() {
 
   useEffect(() => {
     // const url = "https://a.nacapi.com/sainstgram.users";
-    const url = "https://api.jsonbin.io/b/6218fbd625fb1b26b188e317";
+    const url = "https://api.jsonbin.io/b/6218fbd625fb1b26b188e317/5";
     Axios
       .get(url)
       .then(response => setUsers(response.data))
