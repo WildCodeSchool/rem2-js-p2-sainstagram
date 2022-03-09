@@ -9,14 +9,12 @@ function SearchBar() {
   const [suggestions, setSuggestions] = useState([]);
 
   useEffect(() => {
-    
-    const url = "https://api.jsonbin.io/b/6218fbd625fb1b26b188e317/3";
+    const url = "https://api.jsonbin.io/b/6218fbd625fb1b26b188e317/5";
     Axios
       .get(url)
-      .then((response) => setUsers(response.data))
+      .then(response => setUsers(response.data))
       .catch(error => console.log(`API call error: ${error}`))
-      }, []);
-
+  }, []);
 
   const navigate = useNavigate();
 
@@ -28,10 +26,10 @@ function SearchBar() {
     navigate(url);
   }
   const onChangeHandler = (text) => {
-    function isEqual(str1, str2){
+    function isEqual(str1, str2) {
       let nbChar = str2.length;
-      return str1.slice(0,nbChar)
-                .localeCompare(str2, 'fr', {'sensitivity':"base"}) === 0
+      return str1.slice(0, nbChar)
+        .localeCompare(str2, 'fr', { 'sensitivity': "base" }) === 0
     }
     let matches = []
     if (text.length > 0) {
@@ -40,19 +38,18 @@ function SearchBar() {
         return isEqual(user.name, text)
       })
     }
-  
+
     setSuggestions(matches)
     setText(text)
   }
 
-
   return (
     <div className="SearchBar">
       <div className="searchbar-container"><h4>Cherchez un chevalier</h4>
-      <input autoFocus className="input" type="text"
-        onChange={e => onChangeHandler(e.target.value)}
-        value={text}
-      /></div>
+        <input autoFocus className="input" type="text"
+          onChange={e => onChangeHandler(e.target.value)}
+          value={text}
+        /></div>
       {suggestions && suggestions.map((suggestion, i) =>
         <div key={i} className="suggestion" onClick={() => onSuggestionHandler(suggestion.name)}>
           <ul className="suggestion-list">
