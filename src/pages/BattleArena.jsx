@@ -10,7 +10,9 @@ function rollDice(max = 6) {
     return 1 + Math.floor(Math.random() * max)
 }
 function get_data(player1, player2) {
+
     function get_user_by_id(id) {
+        console.log(users);
         let infos = users.filter(item => item.id === parseInt(id))[0];
         return infos;
     }
@@ -26,6 +28,7 @@ function get_data(player1, player2) {
     } else {
         p1 = data[player1];
         p2 = data[player2];
+        console.log([player2]);
     }
     return { 'p1': { ...p1, 'health': 100, 'life': 100 }, 'p2': { ...p2, 'health': 100, 'life': 100 } };
 }
@@ -37,7 +40,7 @@ const BattleArena = () => {
     const [p1ClassName, setP1ClassName] = React.useState("");
     const [p2ClassName, setP2ClassName] = React.useState("");
     const [turn, setTurn] = useState(0);
-    //const [battleState, setBattleState] = React.useState();
+    /*const [battleState, setBattleState] = React.useState();*/
     const [log, setLog] = useState('');
     const [looser, setLooser] = useState(null);
 
@@ -83,11 +86,13 @@ const BattleArena = () => {
     return (
         <div className="BattleArena">
             <NavProfile />
-            <div className='Arena'>
-            <div className="VS titleArena">BATTLE ARENA</div>
+            <div className='Arena'>            
                 <div className='players'>
                     <Player {...player1} className={`PlayerCard ${p1ClassName}`} />
+                    <div className="VSblock">
+                    <div className="VS titleArena">BATTLE ARENA</div>
                     <div className="VS">Vs</div>
+                    </div>
                     <Player {...player2} className={`PlayerCard ${p2ClassName}`} />
                 </div>
                 <div className='pannel'>

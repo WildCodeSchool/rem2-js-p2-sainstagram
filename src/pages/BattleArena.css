@@ -36,17 +36,27 @@
     box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
 }
 
+.VSblock {
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titleArena {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
 .VS {
     text-align: center;
     font-family: 'Allan', cursive;
     color: white;
     text-shadow: 2px 2px 5px rgba(33,33,33,0.64);
-    font-size: 36pt;
+    font-size: 84pt;
 }
-.titleArena {
-    margin-top: 30px;
-    font-size: 30px;
-}
+
 .pannel {
     display: flex;
     flex-direction: column;
@@ -79,11 +89,11 @@ div.log {
     }
     .players {
         justify-content: space-evenly;
-        height: 60%;
+        height: 50%;
     }
     .PlayerCard {
         width: 20%;
-        height: 100%;
+        height: 90%;
         margin-bottom: 10px;
         background-color: rgba(255,255,255, 0.7);
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -91,7 +101,7 @@ div.log {
         box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
     }
     .VS {
-        font-size: 84pt;
+        font-size: 124pt;
     }
     .titleArena {
         position: top;
