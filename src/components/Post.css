@@ -8,15 +8,15 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
-    background-color: rgba(255,255,255, 0.7);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
-    -webkit-box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
-    -moz-box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
+    box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
 }
 
-.Post-postname {  
+.Post-postname {
     font-size: 16px;
     text-align: left;
     margin-left: 20px;
@@ -29,11 +29,11 @@
     margin: 10px;
 }
 
-.post-img { 
+.post-img {
     max-height: 150px;
     width: 250px;
     object-fit: contain;
-    align-self: center;  
+    align-self: center;
     background-color: #272727;
     opacity: 1;
 }
@@ -65,7 +65,8 @@
     justify-content: space-between;
     margin-left: 15px;
 }
-.like-check{
+
+.like-check {
     display: flex;
     flex-direction: row;
     height: 15px;
@@ -74,13 +75,13 @@
 
 .like-check span {
     font-weight: bold;
-    font-size:10.5px;
+    font-size: 10.5px;
 }
 
 .icon-profile {
     height: 15px;
     border-radius: 50%;
-    border:2px solid var(--strong-glue-border);
+    border: 2px solid var(--strong-glue-border);
     margin-left: 20px;
 }
 
@@ -88,16 +89,14 @@
     font-size: 10px;
     padding-left: 5px;
     padding-top: 5px;
-    }
+}
 
 .favorite-emoji {
     display: flex;
     justify-content: flex-end;
     margin-right: 30px;
     cursor: pointer;
-
 }
-    
 
 @media screen and (min-width: 800px) {
     .post-card {
@@ -111,53 +110,42 @@
         margin-bottom: 10px;
         background-color: rgba(255, 255, 255, 0.808);
         /*opacity: 0.85;*/
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 5px;
     }
-    
-    .Post-postname {  
+    .Post-postname {
         font-size: 20px;
         text-align: center;
     }
-    
     .img-container {
         display: flex;
         align-self: center;
-        /* margin: 20px; */
         height: 150px;
         width: 300px;
-    
     }
-    
-    .post-img { 
+    .post-img {
         height: 100%;
         width: 100%;
         object-fit: contain;
-        align-self: center;  
+        align-self: center;
         background-color: #272727;
         opacity: 1;
     }
-    
     .who-posted {
         font-weight: bold;
     }
-    
     .post-caption {
         width: 345px;
         font-size: 15px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     .post-date {
         font-size: 12px;
         text-align: left;
         margin-left: 7%;
-        
     }
-
-    .like-container{
+    .like-container {
         margin-bottom: 20px;
     }
 }
-

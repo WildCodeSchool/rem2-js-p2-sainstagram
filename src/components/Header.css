@@ -7,9 +7,11 @@
     display: flex;
     justify-content: space-between;
 }
+
 .logo-container {
-    max-width: 50%; 
+    max-width: 50%;
 }
+
 .Header-logo {
     height: 70%;
     margin-top: 13px;
@@ -63,17 +65,14 @@
     cursor: pointer;
 }
 
-
 @media screen and (min-width: 800px) {
     .icons-container {
         max-width: 40px;
         position: right;
     }
-
     .icons {
         max-width: 50%;
         display: flex;
         flex-direction: row;
-    }       
-}    
-
+    }
+}

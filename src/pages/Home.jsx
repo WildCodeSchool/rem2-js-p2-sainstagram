@@ -1,7 +1,7 @@
 import React from 'react'
-import './Home.css'
 import NavProfile from '../components/NavProfile'
 import PostList from '../components/PostList'
+import './Home.css'
 
 const Home = () => {
     return (

@@ -4,31 +4,36 @@
     display: flex;
     flex-direction: column;
     margin: 7px;
-    background-color: rgba(255,255,255, 0.7);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
-    -webkit-box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
-    -moz-box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
+    box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
 }
+
 .Dev-Name {
     font-size: 12px;
     margin-top: 7px;
 }
+
 .contact {
     margin: 7px;
     font-size: 8px;
 }
+
 .Github {
     width: 20px;
     height: 20px;
 }
+
 .Linkedin {
     width: 20px;
     height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .Dev-Username {
     font-size: 8px;
     margin-top: 5px;
@@ -42,50 +47,48 @@
     font-size: 8px;
 }
 
-
 @media screen and (min-width: 800px) {
-.InfosDev {
-    width: 40%;
-    height: 25%;
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    background-color: rgba(255,255,255, 0.7);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
-    -webkit-box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
-    -moz-box-shadow: 6px 6px 5px 0px rgba(33,33,33,0.64);
-}
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-}
-.Dev-Name {
-    font-size: 14px;
-    margin-top: 10px;
-}
-.Github {
-    width: 25px;
-    height: 25px;
-}
-.Linkedin {
-    width: 20px;
-    height: 20px;
-}
-.Dev-Username {
-    font-size: 10px;
-    margin-top: 10px;
-}
-.Dev-Github {
-    font-size: 10px;
-}
-
-.Dev-Linkedin {
-    font-size: 10px;
-}
+    .InfosDev {
+        width: 40%;
+        height: 25%;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
+        -webkit-box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
+        -moz-box-shadow: 6px 6px 5px 0px rgba(33, 33, 33, 0.64);
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .Dev-Name {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .Github {
+        width: 25px;
+        height: 25px;
+    }
+    .Linkedin {
+        width: 20px;
+        height: 20px;
+    }
+    .Dev-Username {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .Dev-Github {
+        font-size: 10px;
+    }
+    .Dev-Linkedin {
+        font-size: 10px;
+    }
 }

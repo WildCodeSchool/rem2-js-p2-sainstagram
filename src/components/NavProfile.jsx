@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Axios from "axios";
 import { Link } from "react-router-dom";
+import refresh2 from '../assets/refresh2.png';
 import User from '../components/User'
 import './NavProfile.css';
-import refresh2 from '../assets/refresh2.png';
 
 const NavProfile = () => {
     const [users, setUsers] = useState([]);

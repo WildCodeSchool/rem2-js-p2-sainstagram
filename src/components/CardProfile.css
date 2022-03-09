@@ -11,6 +11,7 @@
     color: var(--text-color);
     font-size: 12px;
 }
+
 .id-card {
     width: 30%;
     height: 100%;
@@ -20,6 +21,7 @@
     align-items: center;
     margin-bottom: 10px;
 }
+
 .Cardpicture-container {
     display: flex;
     justify-content: center;
@@ -29,8 +31,8 @@
     height: 150px;
     object-fit: contain;
     padding-top: 10px;
-
 }
+
 .Cardprofile-picture {
     width: 100%;
     height: 100%;
@@ -38,6 +40,7 @@
     object-fit: cover;
     object-position: 50% 50%;
 }
+
 .Cardprofile-infos {
     display: flex;
     flex-direction: column;
@@ -46,13 +49,16 @@
     padding-left: 20px;
     font-size: 14px;
 }
+
 .Cardprofile-name {
     text-decoration: none;
     color: --text-color;
 }
+
 .Cardprofile-category {
     font-weight: 600;
-} 
+}
+
 .Cardprofile-description {
     width: 90%;
     padding-top: 5px;
@@ -61,14 +67,17 @@
     font-style: italic;
     font-size: 12px;
 }
+
 img.Or {
     border: 2px solid var(--gold-color);
     padding: 2px;
 }
+
 img.Bronze {
     border: 2px solid var(--bronze-color);
     padding: 2px;
 }
+
 img.Argent {
     border: 2px solid var(--silver-color);
     padding: 2px;
@@ -157,9 +166,3 @@ img.Argent {
         object-position: 50% 100%;
     }
 }
-
-
-
-
-
-

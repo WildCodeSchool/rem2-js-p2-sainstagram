@@ -16,7 +16,7 @@
     --bronze-color: #965205;
     /*dark mode*/
     --dark-main-color: #494949;
-    --light-color-dark-mode:#c0c0c0;
+    --light-color-dark-mode: #c0c0c0;
     --mid-color-dark-mode: #6E6E6E;
     --text-dark-mode: #ededed;
     /*bordures mauves*/
@@ -28,4 +28,3 @@
 a {
     color: #272727;
 }
-

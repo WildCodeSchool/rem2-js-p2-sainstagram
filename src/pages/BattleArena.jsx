@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
-import './BattleArena.css'
 import NavProfile from '../components/NavProfile'
 import Player from '../components/Player'
 import data from '../assets/data';
 import users from '../assets/users';
+import './BattleArena.css'
 
 function rollDice(max = 6) {
     return 1 + Math.floor(Math.random() * max)
 }
 function get_data(player1, player2) {
-
     function get_user_by_id(id) {
         console.log(users);
         let infos = users.filter(item => item.id === parseInt(id))[0];
@@ -32,6 +31,7 @@ function get_data(player1, player2) {
     }
     return { 'p1': { ...p1, 'health': 100, 'life': 100 }, 'p2': { ...p2, 'health': 100, 'life': 100 } };
 }
+
 const BattleArena = () => {
     const params = useParams();
     let players_data = get_data(params.player1, params.player2);
@@ -40,16 +40,14 @@ const BattleArena = () => {
     const [p1ClassName, setP1ClassName] = React.useState("");
     const [p2ClassName, setP2ClassName] = React.useState("");
     const [turn, setTurn] = useState(0);
-    /*const [battleState, setBattleState] = React.useState();*/
     const [log, setLog] = useState('');
-    const [looser, setLooser] = useState(null);
 
     function round(player1, player2, turn) {
-        function playerAttack(player){
-            if (player.abilities.length){
-                let weapon = player.abilities[rollDice(player.abilities.length)-1];
+        function playerAttack(player) {
+            if (player.abilities.length) {
+                let weapon = player.abilities[rollDice(player.abilities.length) - 1];
                 return `${player.name} attaque avec ${weapon}!`
-            }else {
+            } else {
                 return `${player.name} attaque !`
             }
         }
@@ -86,16 +84,16 @@ const BattleArena = () => {
     return (
         <div className="BattleArena">
             <NavProfile />
-            <div className='Arena'>            
+            <div className='Arena'>
                 <div className='players'>
                     <Player {...player1} className={`PlayerCard ${p1ClassName}`} />
                     <div className="VSblock">
                         <div className="VStitleArena">
                             BATTLE ARENA
                         </div>
-                    <div className="VS">
-                        Vs
-                    </div>
+                        <div className="VS">
+                            Vs
+                        </div>
                     </div>
                     <Player {...player2} className={`PlayerCard ${p2ClassName}`} />
                 </div>

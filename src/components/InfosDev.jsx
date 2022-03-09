@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React from 'react';
 import "./InfosDev.css"
 import github from '../assets/github2.png'
 import linkedin from '../assets/linkedin2.png'

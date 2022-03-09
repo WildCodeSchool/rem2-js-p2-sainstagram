@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import home from '../assets/home.png';
 import search from '../assets/search.png';
